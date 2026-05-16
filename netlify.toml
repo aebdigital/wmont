@@ -7,3 +7,34 @@
   from = "/api/contact"
   to = "/.netlify/functions/contact"
   status = 200
+
+# Long-lived caching for static assets uploaded to /public.
+# Filenames are content-stable (WordPress upload IDs, hashed exports),
+# so we treat them as immutable.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Next.js hashed bundles — already immutable, but pin it explicitly.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Optimized images coming from /_next/image stay fresh for a day at the browser
+# but stay cached at the edge much longer (Netlify CDN respects s-maxage).
+[[headers]]
+  for = "/_next/image*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, s-maxage=31536000, stale-while-revalidate=604800"

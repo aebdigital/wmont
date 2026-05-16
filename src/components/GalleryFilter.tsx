@@ -78,7 +78,7 @@ export function GalleryFilter({ categories, fallbackImages }: GalleryFilterProps
               fill
               sizes="(min-width: 1536px) 18vw, (min-width: 1280px) 22vw, (min-width: 768px) 30vw, 45vw"
               className="object-cover transition duration-500 group-hover:scale-[1.035]"
-              loading={index < 8 ? "eager" : "lazy"}
+              loading={index < 4 ? "eager" : "lazy"}
             />
           </button>
         ))}

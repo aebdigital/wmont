@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ContentBlocks } from "@/components/ContentBlocks";
-import { MediaGrid } from "@/components/MediaGrid";
 import { PageIntro } from "@/components/Hero";
 import { pageData } from "@/data/pages/o-nas";
 

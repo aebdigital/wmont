@@ -54,7 +54,6 @@ export function MediaGrid({ images, title, dense = false, contained = true }: Me
                   : "(min-width: 1280px) 28vw, (min-width: 768px) 44vw, 90vw"
               }
               className="object-cover transition duration-500 group-hover:scale-[1.035]"
-              loading={index < 8 ? "eager" : "lazy"}
             />
           </button>
         ))}
