@@ -6,7 +6,9 @@ export const brand = {
   "phone": "+421 918 150 409",
   "address": "Rimavské Janovce, 980 01 Močiar 621/38",
   "logo": "/assets/uploads/2023/02/Logo--2048x768.png",
-  "logoLight": "/assets/uploads/2023/02/cropped-Logobiele-1.png"
+  "logoLight": "/assets/uploads/2023/02/cropped-Logobiele-1.png",
+  "facebook": "https://www.facebook.com/wmontsro",
+  "instagram": "https://www.instagram.com/invites/contact/?i=13tblrrlwnmvd&utm_content=m7lsrk5"
 };
 
 export const navigation = [
@@ -27,7 +29,7 @@ export const navigation = [
     "href": "/galeria"
   },
   {
-    "label": "Kontakt",
+    "label": "Kontakt a cena",
     "href": "/kontakt"
   }
 ];
@@ -128,5 +130,19 @@ export const services: ServiceInfo[] = [
       "src": "/assets/uploads/2023/02/3D-vizualizacia-chodba-2-dom-Pezinok.jpg",
       "alt": ""
     }
+  },
+  {
+    "slug": "prenajom-plosin",
+    "path": "/prenajom-plosin",
+    "title": "Prenájom plošín",
+    "excerpt": "Ponúkame profesionálny prenájom pracovných plošín pre výškové práce na stavbách, fasádach a v priemysle.",
+    "image": null
+  },
+  {
+    "slug": "montovane-haly",
+    "path": "/montovane-haly",
+    "title": "Montované haly",
+    "excerpt": "Priemyselné haly – širokospektrálne využitie v priemysle, výrobe a skladovaní. Návrh a realizácia oceľových konštrukcií na mieru.",
+    "image": null
   }
 ];

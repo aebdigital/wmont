@@ -15,5 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function DizajnovePlechyPage() {
-  return <ServicePageLayout page={pageData} />;
+  return (
+    <ServicePageLayout
+      page={pageData}
+      mediaFit="contain"
+      mediaAspect="3/4"
+      mediaCols="trio"
+      mediaShowHeader={false}
+    />
+  );
 }

@@ -15,5 +15,12 @@ export const metadata: Metadata = {
 };
 
 export default function VizualizaciePage() {
-  return <ServicePageLayout page={pageData} />;
+  return (
+    <ServicePageLayout
+      page={pageData}
+      mediaSkipFirst={false}
+      mediaShowCaptions
+      mediaShowHeader={false}
+    />
+  );
 }

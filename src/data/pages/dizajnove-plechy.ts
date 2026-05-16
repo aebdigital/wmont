@@ -5,23 +5,13 @@ export const pageData = {
   path: "/dizajnove-plechy",
   title: "Dizajnové plechy",
   seoTitle: "Dizajnové plechy - wmont",
-  excerpt: "Ponúkame vám dizajnové vypaľované plechy, ktoré sa stávajú neodmysliteľnou súčasťou moderných a nadčasových stavieb. Moderný dizajn a jedinečné vzory ktoré tieto plechy vytvárajú Vám dávajú možnosti vytvoriť unikátne fasády, pergoly, zábradlia , brány , ploty a mnoho iného. Vaše špecifické požiadavky nie sú prekážkou. Po vzájomnej konzultácií vieme vám ponúknuť oveľa širšiu škálu dizajnov, prípadne vyrobiť plechy podľa vašich predstáv a dizajnov. Dizajnové plechy sa stávajú neodmysliťeľnou súčasťou modernej architektúry.",
+  excerpt: "Ponúkame vám dizajnové vypaľované plechy. Moderný dizajn a jedinečné vzory Vám dávajú možnosti vytvoriť unikátne fasády, pergoly, zábradlia, brány, ploty a mnoho iného.",
   isService: true,
   blocks: [
   {
     "type": "heading",
     "level": 3,
-    "text": "Dizajnové plechy"
-  },
-  {
-    "type": "heading",
-    "level": 3,
     "text": "Výroba na mieru"
-  },
-  {
-    "type": "text",
-    "level": null,
-    "text": "Ponúkame vám dizajnové vypaľované plechy, ktoré sa stávajú neodmysliteľnou súčasťou moderných a nadčasových stavieb. Moderný dizajn a jedinečné vzory ktoré tieto plechy vytvárajú Vám dávajú možnosti vytvoriť unikátne fasády, pergoly, zábradlia , brány , ploty a mnoho iného."
   },
   {
     "type": "text",

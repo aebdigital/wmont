@@ -68,7 +68,7 @@ export function Lightbox({ images, title, activeIndex, onClose }: LightboxProps)
     >
       <button
         type="button"
-        className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded bg-white text-ink transition hover:bg-redline hover:text-white"
+        className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded bg-ink/70 text-white backdrop-blur-md transition hover:bg-redline"
         aria-label="Zatvoriť galériu"
         title="Zatvoriť"
         onClick={onClose}
@@ -80,7 +80,7 @@ export function Lightbox({ images, title, activeIndex, onClose }: LightboxProps)
         <>
           <button
             type="button"
-            className="absolute left-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded bg-white text-ink transition hover:bg-redline hover:text-white"
+            className="absolute left-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded bg-ink/70 text-white backdrop-blur-md transition hover:bg-redline"
             aria-label="Predchádzajúca fotografia"
             title="Predchádzajúca fotografia"
             onClick={() => go(-1)}
@@ -89,7 +89,7 @@ export function Lightbox({ images, title, activeIndex, onClose }: LightboxProps)
           </button>
           <button
             type="button"
-            className="absolute right-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded bg-white text-ink transition hover:bg-redline hover:text-white"
+            className="absolute right-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded bg-ink/70 text-white backdrop-blur-md transition hover:bg-redline"
             aria-label="Ďalšia fotografia"
             title="Ďalšia fotografia"
             onClick={() => go(1)}

@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -47,7 +47,7 @@ export function SiteHeader() {
                 <div key={item.href} className="group relative">
                   <button
                     type="button"
-                    className={`inline-flex items-center gap-2 rounded px-4 py-3 text-sm font-semibold transition ${
+                    className={`inline-flex items-center gap-2 rounded px-4 py-3 text-base font-extrabold transition ${
                       active ? "bg-ink text-white" : "text-ink hover:bg-neutral-100"
                     }`}
                   >
@@ -75,7 +75,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded px-4 py-3 text-sm font-semibold transition ${
+                className={`rounded px-4 py-3 text-base font-extrabold transition ${
                   active ? "bg-ink text-white" : "text-ink hover:bg-neutral-100"
                 }`}
               >
@@ -85,10 +85,30 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
+          <a
+            href={brand.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            title="Facebook"
+            className="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+          >
+            <Facebook aria-hidden="true" size={18} />
+          </a>
+          <a
+            href={brand.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            title="Instagram"
+            className="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+          >
+            <Instagram aria-hidden="true" size={18} />
+          </a>
           <a
             href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`}
-            className="inline-flex h-11 items-center gap-2 rounded bg-redline px-4 text-sm font-bold text-white transition hover:bg-black"
+            className="ml-1 inline-flex h-11 items-center gap-2 rounded bg-redline px-4 text-sm font-bold text-white transition hover:bg-black"
           >
             <Phone aria-hidden="true" size={18} />
             <span>{brand.phone}</span>
@@ -144,6 +164,30 @@ export function SiteHeader() {
               <Phone aria-hidden="true" size={18} />
               {brand.phone}
             </a>
+            <div className="mt-1 flex gap-2">
+              <a
+                href={brand.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded border border-line text-sm font-bold text-ink"
+                onClick={() => setOpen(false)}
+              >
+                <Facebook aria-hidden="true" size={18} />
+                Facebook
+              </a>
+              <a
+                href={brand.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded border border-line text-sm font-bold text-ink"
+                onClick={() => setOpen(false)}
+              >
+                <Instagram aria-hidden="true" size={18} />
+                Instagram
+              </a>
+            </div>
           </nav>
         </div>
       ) : null}

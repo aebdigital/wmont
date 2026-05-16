@@ -3,16 +3,11 @@ import type { ContentBlock, MediaItem, GalleryCategory } from "@/lib/types";
 export const pageData = {
   slug: "3d-vizualizacie",
   path: "/3d-vizualizacie",
-  title: "Interiérové štúdio 3D",
+  title: "3D vizualizácia interiérov bytov, rodinných domov a stavieb.",
   seoTitle: "3D Vizualizácie - wmont",
-  excerpt: "1- Zašlete nám podklady a záväzný popis vašej predstavy. Zväčša si vystačíme s pôdorysmi, rezmi a situačnou mapou. Na základe zaslaných podkladov stanovíme cenu. 2- Prvotné vypracovanie nám trvá štandardne 3 – 5 pracovných dní, kedy zasielame drafty na posúdenie. Pri väčších projektoch to môže trvať dlhšie.",
+  excerpt: "Pripravujeme realistické 3D vizualizácie a virtuálne prehliadky interiérov, exteriérov aj celých projektov. Pomôžeme vám rozhodnúť sa skôr, než sa pustíte do realizácie.",
   isService: true,
   blocks: [
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "3D vizualizácia interiérov bytov, rodinných domov a stavieb."
-  },
   {
     "type": "heading",
     "level": 2,
@@ -73,87 +68,47 @@ export const pageData = {
     "level": null,
     "text": "Virtuálna prehliadka funguje na technológii dobre známej napríklad z Google Street View. Dokáže sprostredkovať vonkajšie aj vnútorné priestory lepšie než video, alebo séria fotografií. Na 360° panoramatickej snímke je zachytené celé okolie daného miesta a vďaka tomu je možné sa v priestore skutočne rozhliadnuť. Zážitok je ešte umocnený použitím 3D okuliarov. Virtuálne prehliadky fungujú dobre aj na klasických počítačoch aj na mobilných telefónoch"
   },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia chodby"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia kuchynskej linky"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia interiéru"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia jedáleň interiér"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia kupelky"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácia obývacia izba"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "Vizualizácia interiéru obývacia izba"
-  },
-  {
-    "type": "heading",
-    "level": 4,
-    "text": "3d vizualizácie detskej izby – interiér."
-  }
 ] as ContentBlock[],
   images: [
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/3D-vizualizacia-chodba-2-dom-Pezinok.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia chodby"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/stiahnut3.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia kuchynskej linky"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/pCon.Planner.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia interiéru"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/3d-vizualizacia.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia jedáleň interiér"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/3d-vizualizacia-kupelne-010.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia kúpeľne"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/Cam-sedacka-V1.jpg",
-    "alt": ""
+    "alt": "3D vizualizácia obývacia izba"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/1domsenkvice.jpg",
-    "alt": ""
+    "alt": "Vizualizácia interiéru obývacia izba"
   },
   {
     "type": "image",
     "src": "/assets/uploads/2023/02/detska-izba.jpg",
-    "alt": ""
+    "alt": "3D vizualizácie detskej izby – interiér"
   }
 ] as MediaItem[],
   videos: [

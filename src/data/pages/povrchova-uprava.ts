@@ -3,16 +3,11 @@ import type { ContentBlock, MediaItem, GalleryCategory } from "@/lib/types";
 export const pageData = {
   slug: "povrchova-uprava",
   path: "/povrchova-uprava",
-  title: "Povrchová úprava",
+  title: "Povrchová úprava kovov – je ochrana pre kovové povrchy",
   seoTitle: "Povrchová úprava - wmont",
-  excerpt: "Povrchová úprava je proces úpravy produktov a výrobkov, ktorým je možnosť docieliť zlepšenie a zmenu vlastností, stavu povrchu. Zaraďuje sa tu:a) predúprava povrchub) tvorba umelých vrstiev na povrchu výrobku s rôznymi fyzikálnymi vlastnosťami a chemickým zložením, odlišným od základného kovu [1, 2].",
+  excerpt: "Povrchová úprava je proces úpravy produktov a výrobkov, ktorým je možnosť docieliť zlepšenie a zmenu vlastností, stavu povrchu.",
   isService: true,
   blocks: [
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Povrchová úprava kovov – je ochrana pre kovové povrchy"
-  },
   {
     "type": "heading",
     "level": 2,
@@ -21,17 +16,29 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Povrchová úprava je proces úpravy produktov a výrobkov, ktorým je možnosť docieliť zlepšenie a zmenu vlastností, stavu povrchu."
+    "text": "Zaraďuje sa tu:"
   },
   {
-    "type": "text",
+    "type": "list",
     "level": null,
-    "text": "Zaraďuje sa tu:a) predúprava povrchub) tvorba umelých vrstiev na povrchu výrobku s rôznymi fyzikálnymi vlastnosťami a chemickým zložením, odlišným od základného kovu [1, 2]."
+    "text": "a) predúprava povrchu"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "b) tvorba umelých vrstiev na povrchu výrobku s rôznymi fyzikálnymi vlastnosťami a chemickým zložením, odlišným od základného kovu [1, 2]."
   },
   {
     "type": "text",
     "level": null,
     "text": "Hlavnou podstatou používania povrchových úprav je ochrana výrobkov a ich jednotlivých častí pred účinkami korózie a opotrebenia. Existujú aj povrchové úpravy výrobkov s vytváraním nových vlastností. Sú to napríklad zlepšenie estetiky výrobku, zvýšenie tvrdosti povrchu a zároveň zvýšenie odolnosti voči opotrebeniu. Tiež sa vytvárajú nové schopnosti výrobku, napríklad elektrickú vodivosť, schopnosť lepšieho odrážania svetelných lúčov alebo schopnosť elektricky izolovať.Pri úprave povrchu je potrebné vytvárať povlaky. Vytváranie rôznych druhov povlakov patrí medzi najdôležitejšie spôsoby ochrany materiálu [2]"
+  },
+  {
+    "type": "image_right",
+    "level": null,
+    "text": "Na čo slúži povrchová úprava kovov",
+    "src": "/povrchova/Nacosluzi.jpg",
+    "alt": "Na čo slúži povrchová úprava kovov"
   },
   {
     "type": "heading",
@@ -52,6 +59,13 @@ export const pageData = {
     "type": "text",
     "level": null,
     "text": "Kovové povrchy tak ochráni pred vplyvmi vonkajšieho prostredia, ale aj pre mechanickým poškodením. Zároveň, zlepšuje aj ich adhéziu a výrazne prispieva k zlepšeniu technických vlastností kovových povrchov. Tie získavajú odolnosť voči vlhkosti, korózii či dokonca požiaru. Povrchovou úpravou sa zvyšuje aj hodnota samotných výrobkov a predmetov z kovu.."
+  },
+  {
+    "type": "image_right",
+    "level": null,
+    "text": "Epoxidové nátery",
+    "src": "/povrchova/epoxidove.png",
+    "alt": "Epoxidové nátery"
   },
   {
     "type": "heading",

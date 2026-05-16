@@ -9,10 +9,26 @@ type ServicePageLayoutProps = {
   page: PageData;
   children?: React.ReactNode;
   showMediaGrid?: boolean;
+  mediaFit?: "cover" | "contain";
+  mediaAspect?: "4/3" | "3/4" | "1/1";
+  mediaCols?: "default" | "dense" | "trio";
+  mediaShowHeader?: boolean;
+  mediaShowCaptions?: boolean;
+  mediaSkipFirst?: boolean;
 };
 
-export function ServicePageLayout({ page, children, showMediaGrid = true }: ServicePageLayoutProps) {
-  const galleryImages = page.images.slice(1);
+export function ServicePageLayout({
+  page,
+  children,
+  showMediaGrid = true,
+  mediaFit = "cover",
+  mediaAspect = "4/3",
+  mediaCols = "default",
+  mediaShowHeader = true,
+  mediaShowCaptions = false,
+  mediaSkipFirst = true,
+}: ServicePageLayoutProps) {
+  const galleryImages = mediaSkipFirst ? page.images.slice(1) : page.images;
 
   return (
     <>
@@ -24,7 +40,16 @@ export function ServicePageLayout({ page, children, showMediaGrid = true }: Serv
             <ContentBlocks blocks={page.blocks} title={page.title} mode="article" />
           )}
           {showMediaGrid && galleryImages.length > 0 ? (
-            <MediaGrid images={galleryImages} title={page.title} contained={false} />
+            <MediaGrid
+              images={galleryImages}
+              title={page.title}
+              contained={false}
+              fit={mediaFit}
+              aspect={mediaAspect}
+              cols={mediaCols}
+              showHeader={mediaShowHeader}
+              showCaptions={mediaShowCaptions}
+            />
           ) : null}
         </div>
       </section>

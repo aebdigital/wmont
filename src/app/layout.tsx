@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/"
   },
+  icons: {
+    icon: [{ url: "/montaznesluzby/favicon.jpg", type: "image/jpeg" }],
+    shortcut: "/montaznesluzby/favicon.jpg",
+    apple: "/montaznesluzby/favicon.jpg"
+  },
   robots: {
     index: true,
     follow: true,

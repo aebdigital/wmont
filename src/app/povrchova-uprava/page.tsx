@@ -15,5 +15,5 @@ export const metadata: Metadata = {
 };
 
 export default function PovrchovaUpravaPage() {
-  return <ServicePageLayout page={pageData} />;
+  return <ServicePageLayout page={pageData} showMediaGrid={false} />;
 }
