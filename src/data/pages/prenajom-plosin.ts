@@ -76,8 +76,12 @@ export const liftProducts: LiftProduct[] = [
       "Nožnicová terénna plošina s veľkou pracovnou platformou a pohonom 4×4. Vhodná pre montážne, stavebné a údržbárske práce v exteriéri aj na nerovnom teréne.",
     photos: [
       {
-        src: "/prenajomplosin/GS2668.jpg",
+        src: "/genie-gs-2669rt.jpg",
         alt: "Genie GS 2668 RT – nožnicová plošina",
+      },
+      {
+        src: "/genie-gs-2668-working-diagram.jpg",
+        alt: "Genie GS 2668 RT – pracovný diagram",
       },
     ],
     specs: [
