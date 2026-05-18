@@ -51,11 +51,13 @@ export function ContentBlocks({
       const prevBlock = index > 0 ? blocks[index - 1] : null;
       const HeadingTag = (block.level === 3 ? "h3" : block.level === 4 ? "h4" : "h2") as any;
       let headingClass = "text-balance font-extrabold leading-tight text-ink first:mt-0 ";
-      
-      if (prevBlock?.type !== "image_right") {
+
+      const prevIsFloatedImage =
+        prevBlock?.type === "image_right" || prevBlock?.type === "image_left";
+      if (!prevIsFloatedImage) {
         headingClass += "mt-10 clear-both ";
       } else {
-        headingClass += "mt-2 ";
+        headingClass += "mt-6 md:mt-2 ";
       }
 
       if (block.level === 3) {
@@ -77,14 +79,17 @@ export function ContentBlocks({
       return;
     }
 
-    if (block.type === "image_right") {
+    if (block.type === "image_right" || block.type === "image_left") {
+      const isLeft = block.type === "image_left";
       rendered.push(
         <div key={`clear-${index}`} className={`clear-both ${index > 0 ? "pt-10" : ""}`} />
       );
       rendered.push(
         <figure
           key={`img-${index}`}
-          className="float-right ml-6 mb-6 mt-2 w-full max-w-[280px] overflow-hidden rounded border border-line bg-neutral-100 lg:max-w-[360px]"
+          className={`${
+            isLeft ? "md:float-left md:mr-6" : "md:float-right md:ml-6"
+          } float-none mx-auto md:mx-0 mb-6 mt-2 w-full max-w-[340px] md:max-w-[280px] lg:max-w-[360px] overflow-hidden rounded border border-line bg-neutral-100`}
         >
           <div className="relative aspect-square">
             <Image
@@ -92,7 +97,7 @@ export function ContentBlocks({
               alt={block.alt || block.text || ""}
               fill
               className="object-cover"
-              sizes="(min-width: 1024px) 360px, 280px"
+              sizes="(min-width: 1024px) 360px, (min-width: 768px) 280px, 340px"
             />
           </div>
         </figure>
@@ -115,7 +120,9 @@ export function ContentBlocks({
   if (mode === "article") {
     return (
       <section className="border-t border-line pt-10">
-        <div className="space-y-5 flow-root">{rendered}</div>
+        <div className="space-y-5 flow-root" data-reveal-stagger="50">
+          {rendered}
+        </div>
       </section>
     );
   }

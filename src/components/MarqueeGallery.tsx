@@ -14,7 +14,7 @@ export function MarqueeGallery({ images, title }: { images: MediaItem[]; title: 
   const duplicatedRow2 = [...row2, ...row2];
 
   return (
-    <section className="mt-16 overflow-hidden md:mt-24">
+    <section className="mt-16 overflow-hidden md:mt-24 reveal">
       <div className="wm-container mb-7 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm font-extrabold uppercase tracking-normal text-redline">Galéria</p>

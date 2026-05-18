@@ -34,7 +34,9 @@ export function CookieConsent() {
     const openSettings = () => {
       const latest = window.localStorage.getItem(storageKey);
       if (latest) setSettings({ ...defaultSettings, ...JSON.parse(latest) });
-      setVisible(true);
+      // Only open the settings modal — do NOT re-show the bottom banner.
+      // The banner is for users who haven't decided yet; once they've saved
+      // any choice, opening settings from the footer link should just edit it.
       setSettingsOpen(true);
     };
 
@@ -49,10 +51,11 @@ export function CookieConsent() {
     setSettingsOpen(false);
   }
 
-  if (!visible) return null;
+  if (!visible && !settingsOpen) return null;
 
   return (
     <>
+      {visible ? (
       <div className="fixed bottom-4 left-1/2 z-[90] w-[90vw] max-w-4xl -translate-x-1/2 rounded border border-line bg-white p-4 shadow-soft">
         <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
           <div>
@@ -89,6 +92,7 @@ export function CookieConsent() {
           </div>
         </div>
       </div>
+      ) : null}
 
       {settingsOpen ? (
         <div className="fixed inset-0 z-[95] grid place-items-center bg-black/60 p-4 backdrop-blur-sm">

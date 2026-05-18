@@ -44,6 +44,17 @@ export type ServiceInfo = {
 
 export const services: ServiceInfo[] = [
   {
+    "slug": "montovane-haly",
+    "path": "/montovane-haly",
+    "title": "Montované haly",
+    "excerpt": "Priemyselné haly – širokospektrálne využitie v priemysle, výrobe a skladovaní. Návrh a realizácia oceľových konštrukcií na mieru.",
+    "image": {
+      "type": "image",
+      "src": "/montaznesluzby/priemyselneamontovane.jpg",
+      "alt": "Montované haly"
+    }
+  },
+  {
     "slug": "kovovyroba-ploty-brany",
     "path": "/kovovyroba-ploty-brany",
     "title": "Kovovýroba",
@@ -52,6 +63,17 @@ export const services: ServiceInfo[] = [
       "type": "image",
       "src": "/assets/uploads/2023/02/91740668_695601431200205_1220323306851270656_n.jpg",
       "alt": ""
+    }
+  },
+  {
+    "slug": "prenajom-plosin",
+    "path": "/prenajom-plosin",
+    "title": "Prenájom plošín",
+    "excerpt": "Ponúkame profesionálny prenájom pracovných plošín pre výškové práce na stavbách, fasádach a v priemysle.",
+    "image": {
+      "type": "image",
+      "src": "/prenajomplosin/GS2668.jpg",
+      "alt": "Prenájom plošín"
     }
   },
   {
@@ -116,33 +138,8 @@ export const services: ServiceInfo[] = [
     "excerpt": "Ponúkame vám dizajnové vypaľované plechy, ktoré sa stávajú neodmysliteľnou súčasťou moderných a nadčasových stavieb. Moderný dizajn a jedinečné vzory ktoré tieto plechy vytvárajú Vám dávajú možnosti vytvoriť unikátne fasády, pergoly, zábradlia , brány , ploty a mnoho iného. Vaše špecifické požiadavky nie sú prekážkou. Po vzájomnej konzultácií vieme vám ponúknuť oveľa širšiu škálu dizajnov, prípadne vyrobiť plechy podľa vašich predstáv a dizajnov. Dizajnové plechy sa stávajú neodmysliťeľnou súčasťou modernej architektúry.",
     "image": {
       "type": "image",
-      "src": "/assets/uploads/2023/02/1-2-1536x2048.jpg",
+      "src": "/assets/uploads/2023/02/1-2-scaled.jpg",
       "alt": ""
     }
-  },
-  {
-    "slug": "3d-vizualizacie",
-    "path": "/3d-vizualizacie",
-    "title": "Interiérové štúdio 3D",
-    "excerpt": "1- Zašlete nám podklady a záväzný popis vašej predstavy. Zväčša si vystačíme s pôdorysmi, rezmi a situačnou mapou. Na základe zaslaných podkladov stanovíme cenu. 2- Prvotné vypracovanie nám trvá štandardne 3 – 5 pracovných dní, kedy zasielame drafty na posúdenie. Pri väčších projektoch to môže trvať dlhšie.",
-    "image": {
-      "type": "image",
-      "src": "/assets/uploads/2023/02/3D-vizualizacia-chodba-2-dom-Pezinok.jpg",
-      "alt": ""
-    }
-  },
-  {
-    "slug": "prenajom-plosin",
-    "path": "/prenajom-plosin",
-    "title": "Prenájom plošín",
-    "excerpt": "Ponúkame profesionálny prenájom pracovných plošín pre výškové práce na stavbách, fasádach a v priemysle.",
-    "image": null
-  },
-  {
-    "slug": "montovane-haly",
-    "path": "/montovane-haly",
-    "title": "Montované haly",
-    "excerpt": "Priemyselné haly – širokospektrálne využitie v priemysle, výrobe a skladovaní. Návrh a realizácia oceľových konštrukcií na mieru.",
-    "image": null
   }
 ];

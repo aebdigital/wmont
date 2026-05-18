@@ -1,27 +1,119 @@
 import type { ContentBlock, MediaItem, GalleryCategory } from "@/lib/types";
 
+export const introBlocks: ContentBlock[] = [
+  {
+    type: "image_right",
+    level: null,
+    text: "Veľkorozmerná priemyselná hala s kovovým opláštením",
+    src: "/haly/r_0024D.webp",
+    alt: "Veľkorozmerná priemyselná hala s kovovým opláštením a hladkou prístupovou plochou",
+  },
+  {
+    type: "text",
+    level: null,
+    text: "Realizujeme priemyselné a skladové haly v plnom rozsahu – od prvej obhliadky pozemku až po odovzdanie hotovej stavby pripravenej na okamžitú prevádzku. Rozumieme tomu, že každý zákazník je v inom bode prípravy: niekto má len pozemok a víziu, iný už hotové základy a hľadá partnera, ktorý dotiahne zvyšok. Spoluprácu preto vždy nastavujeme podľa toho, kde sa práve nachádzate.",
+  },
+];
+
+export const komplexnaBlocks: ContentBlock[] = [
+  {
+    type: "heading",
+    level: 2,
+    text: "Komplexná realizácia od základov po kolaudáciu",
+  },
+  {
+    type: "image_right",
+    level: null,
+    text: "Moderná logistická hala s bielou panelovou fasádou",
+    src: "/haly/Fixinggroup_Lagerhalle.jpg",
+    alt: "Moderná logistická hala s bielou panelovou fasádou a nakladacími vrátami",
+  },
+  {
+    type: "text",
+    level: null,
+    text: "Ak prichádzate s prázdnym pozemkom, zoberieme na seba celý projekt. Začíname výkopovými a zemnými prácami, pokračujeme spodnou stavbou a betónovými základmi, montážou oceľovej nosnej konštrukcie, opláštením, strechou až po priemyselné podlahy, vráta a technologické rozvody. Hala vám stojí na kľúč – vy prídete a začnete vyrábať alebo skladovať.",
+  },
+  {
+    type: "text",
+    level: null,
+    text: "Súčasťou plnej dodávky je aj sprostredkovanie všetkého, čo stavba potrebuje na úrovni dokumentácie a povolení. Zabezpečíme statický posudok, projektovú dokumentáciu, geologický prieskum aj kompletný inžiniering – od územného rozhodnutia a stavebného povolenia až po komunikáciu s úradmi, dotknutými orgánmi a správcami sietí. Vy schvaľujete míľniky, my riešime papierovačky.",
+  },
+];
+
+export const flexibilnyBlocks: ContentBlock[] = [
+  {
+    type: "heading",
+    level: 2,
+    text: "Flexibilný rozsah – nadviažeme aj ukončíme tam, kde to dáva zmysel",
+  },
+  {
+    type: "image_right",
+    level: null,
+    text: "Interiér priemyselnej haly s oceľovou konštrukciou a mostovými žeriavmi",
+    src: "/haly/industrial-structure-14-1200x675.jpg",
+    alt: "Interiér priemyselnej haly s oceľovou priehradovou konštrukciou a mostovými žeriavmi",
+  },
+  {
+    type: "text",
+    level: null,
+    text: "Nie každý zákazník nás potrebuje od prvého výkopu. Ak už máte hotové základy alebo časť spodnej stavby a hľadáte, kto postaví oceľovú konštrukciu a opláštenie, nadviažeme tam, kde to vaši predchádzajúci dodávatelia nechali. Posúdime existujúcu prípravu, doladíme statiku na novú konštrukciu a hladko prevezmeme rozpracovaný projekt.",
+  },
+  {
+    type: "text",
+    level: null,
+    text: "Funguje to aj opačne. Ak máte vlastné kapacity na finalizáciu, postavíme len tú časť, ktorú vy alebo váš tím nezvládnete – napríklad hrubú stavbu a opláštenie – a zvyšok si dokončíte podľa vlastného harmonogramu. Vždy hľadáme rozsah, ktorý dáva zmysel pre váš rozpočet, časový plán aj interné možnosti.",
+  },
+];
+
+export const scopeBlocks: ContentBlock[] = [
+  {
+    type: "heading",
+    level: 3,
+    text: "Čo všetko vieme zastrešiť",
+  },
+  { type: "list", level: null, text: "Výkopové a zemné práce, príprava staveniska a HTÚ" },
+  { type: "list", level: null, text: "Spodná stavba a betónové základy vrátane základových pätiek" },
+  { type: "list", level: null, text: "Statický posudok a kompletná projektová dokumentácia" },
+  { type: "list", level: null, text: "Inžinierska činnosť, územné rozhodnutie a stavebné povolenia" },
+  { type: "list", level: null, text: "Oceľová nosná konštrukcia a opláštenie sendvičovými panelmi" },
+  { type: "list", level: null, text: "Strecha, klampiarske práce a odvodnenie objektu" },
+  { type: "list", level: null, text: "Priemyselné betónové podlahy s vystužením podľa zaťaženia" },
+  { type: "list", level: null, text: "Sekčné vráta, okná, dvere a vnútorné panelové priečky" },
+  { type: "list", level: null, text: "Príprava na technológie a koordinácia profesných subdodávateľov" },
+  { type: "list", level: null, text: "Odovzdanie stavby pripravenej na kolaudáciu" },
+];
+
 export const pageData = {
   slug: "montovane-haly",
   path: "/montovane-haly",
   title: "Montované oceľové haly na mieru pre priemysel a sklady",
   seoTitle: "Montované haly - wmont",
   excerpt:
-    "Priemyselné a skladové haly navrhnuté pre konkrétnu prevádzku – od výrobných liniek až po logistické centrá. Návrh, projekcia aj realizácia z jednej ruky.",
+    "Priemyselné a skladové haly na mieru – komplexne od výkopov a základov, vrátane povolení a statiky, alebo flexibilne len v rozsahu, ktorý potrebujete dotiahnuť do konca.",
   isService: true,
   blocks: [
-    {
-      type: "text",
-      level: null,
-      text: "Priemyselné a skladové haly tvoria základ pre množstvo odvetví – od výroby cez logistiku až po servisné prevádzky. Každá zákazka má svoje špecifiká a my k nej pristupujeme individuálne. Pri návrhu kladieme dôraz nielen na samotnú nosnú konštrukciu, ale predovšetkým na funkčné usporiadanie priestoru. Naši inžinieri pracujú s dispozíciou efektívne v ploche aj vo výške a od prvých skíc plánujú výrobné a skladové zóny tak, aby boli prevádzkovo logické a ekonomicky udržateľné.",
-    },
-    {
-      type: "text",
-      level: null,
-      text: "Oceľové haly sú spoľahlivým riešením pre rastúce firmy, ktoré potrebujú vlastný funkčný priestor. Vďaka modulárnemu prístupu sa hodia rovnako pre menšie prevádzky aj rozsiahle priemyselné areály. Spájajú všestrannosť, dlhú životnosť a rozumné prevádzkové náklady – preto si ich vyberajú firmy z najrôznejších odvetví.",
-    },
-
+    ...introBlocks,
+    ...komplexnaBlocks,
+    ...flexibilnyBlocks,
+    ...scopeBlocks,
   ] as ContentBlock[],
-  images: [] as MediaItem[],
+  images: [
+    {
+      type: "image",
+      src: "/haly/r_0024D.webp",
+      alt: "Veľkorozmerná priemyselná hala s kovovým opláštením a hladkou prístupovou plochou",
+    },
+    {
+      type: "image",
+      src: "/haly/Fixinggroup_Lagerhalle.jpg",
+      alt: "Moderná logistická hala s bielou panelovou fasádou a nakladacími vrátami",
+    },
+    {
+      type: "image",
+      src: "/haly/industrial-structure-14-1200x675.jpg",
+      alt: "Interiér priemyselnej haly s oceľovou priehradovou konštrukciou a mostovými žeriavmi",
+    },
+  ] as MediaItem[],
   videos: [] as MediaItem[],
   galleryCategories: [] as GalleryCategory[],
 };

@@ -3,6 +3,14 @@ import { brand, services } from "@/lib/site";
 
 export function StructuredData() {
   const siteUrl = "https://www.wmont.sk";
+  const businessImages = [
+    `${siteUrl}${brand.logo}`,
+    ...services
+      .map((service) => (service.image ? `${siteUrl}${service.image.src}` : null))
+      .filter((src): src is string => Boolean(src))
+      .slice(0, 5)
+  ];
+
   const schema = [
     {
       "@context": "https://schema.org",
@@ -11,9 +19,10 @@ export function StructuredData() {
       name: brand.name,
       url: siteUrl,
       logo: `${siteUrl}${brand.logo}`,
-      image: `${siteUrl}${brand.logo}`,
+      image: businessImages,
       email: brand.email,
       telephone: contactPhoneDisplay,
+      sameAs: [brand.facebook, brand.instagram].filter(Boolean),
       address: {
         "@type": "PostalAddress",
         streetAddress: "Močiar 621/38",

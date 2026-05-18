@@ -24,9 +24,16 @@ export const pageData = {
     "text": "S naším záväzkom k personalizovaným, ekologickým a udržateľným riešeniam veríme, že môžeme priniesť pridanú hodnotu vašim projektom. Vyberte si nás pre vaše projekty v oblasti kovovýroby a zažite rozdiel, ktorý prináša jedinečný prístup a zodpovednosť."
   },
   {
+    "type": "image_right",
+    "level": null,
+    "text": "Stavebné práce",
+    "src": "/new-fb/zabradlia/596808032_1552764763181684_249510121176720827_n.jpg",
+    "alt": "Stavebné práce – kovové zábradlie"
+  },
+  {
     "type": "heading",
     "level": 2,
-    "text": "Stavebné práce:"
+    "text": "Stavebné práce"
   },
   {
     "type": "list",
@@ -54,9 +61,16 @@ export const pageData = {
     "text": "Územná pôsobnosť: Zastrešujeme cele územie slovenskej republiky v rámci dohody."
   },
   {
+    "type": "image_left",
+    "level": null,
+    "text": "Platobné podmienky",
+    "src": "/assets/uploads/2023/02/204986554_999813907445621_8554479241131795023_n.jpg",
+    "alt": "Platobné podmienky – realizácia"
+  },
+  {
     "type": "heading",
     "level": 2,
-    "text": "Platobné podmienky:"
+    "text": "Platobné podmienky"
   },
   {
     "type": "list",
@@ -77,6 +91,13 @@ export const pageData = {
     "type": "list",
     "level": null,
     "text": "Pravidelné a vyššie hodnotené zákazky: dohodou."
+  },
+  {
+    "type": "image_right",
+    "level": null,
+    "text": "Princípy našej práce",
+    "src": "/assets/uploads/2026/01/WhatsApp-Image-2026-01-31-at-20.49.01.jpeg",
+    "alt": "Princípy našej práce – tím W-Mont"
   },
   {
     "type": "heading",

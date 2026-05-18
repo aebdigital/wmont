@@ -25,7 +25,7 @@ export function ContactBand() {
   ];
 
   return (
-    <section className="wm-container mt-16">
+    <section className="wm-container mt-16 reveal">
       <div className="grid gap-4 rounded bg-ink p-5 text-white md:grid-cols-3 md:p-6">
         {items.map((item) => {
           const Icon = item.icon;

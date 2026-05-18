@@ -1,5 +1,5 @@
 export type ContentBlock = {
-  type: "heading" | "text" | "list" | "image_right";
+  type: "heading" | "text" | "list" | "image_right" | "image_left";
   level: number | null;
   text: string;
   src?: string;

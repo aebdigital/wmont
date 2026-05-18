@@ -54,17 +54,32 @@ export function SiteHeader() {
                     {item.label}
                     <ChevronDown aria-hidden="true" size={16} />
                   </button>
-                  <div className="invisible absolute left-0 top-full w-[320px] pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                    <div className="grid gap-1 rounded border border-line bg-white p-3 shadow-soft">
-                      {services.map((service) => (
-                        <Link
-                          key={service.slug}
-                          href={service.path}
-                          className="rounded px-3 py-3 text-sm font-semibold leading-5 text-muted transition hover:bg-ink hover:text-white"
-                        >
-                          {service.title}
-                        </Link>
-                      ))}
+                  <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                    <div className="w-[min(95vw,1100px)]">
+                      <div className="grid grid-cols-5 gap-3 border border-line bg-white p-4 shadow-soft">
+                        {services.map((service) => (
+                          <Link
+                            key={service.slug}
+                            href={service.path}
+                            className="group/card flex flex-col border border-transparent p-2 transition hover:border-ink"
+                          >
+                            <span className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                              {service.image ? (
+                                <Image
+                                  src={service.image.src}
+                                  alt=""
+                                  fill
+                                  sizes="(min-width: 1280px) 18vw, 22vw"
+                                  className="object-cover transition duration-500 group-hover/card:scale-[1.08]"
+                                />
+                              ) : null}
+                            </span>
+                            <span className="mt-2 block text-sm font-extrabold leading-tight text-ink">
+                              {service.title}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

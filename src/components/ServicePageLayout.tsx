@@ -2,8 +2,12 @@ import { ContactBand } from "@/components/ContactBand";
 import { ContentBlocks } from "@/components/ContentBlocks";
 import { PageIntro } from "@/components/Hero";
 import { MediaGrid } from "@/components/MediaGrid";
+import { ServiceCTA } from "@/components/ServiceCTA";
 import { ServiceSidebar } from "@/components/ServiceSidebar";
+import { brand } from "@/lib/site";
 import type { PageData } from "@/lib/types";
+
+const siteUrl = "https://www.wmont.sk";
 
 type ServicePageLayoutProps = {
   page: PageData;
@@ -30,10 +34,50 @@ export function ServicePageLayout({
 }: ServicePageLayoutProps) {
   const galleryImages = mediaSkipFirst ? page.images.slice(1) : page.images;
 
+  const serviceImage = page.images[0]?.src
+    ? `${siteUrl}${page.images[0].src}`
+    : `${siteUrl}${brand.logo}`;
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${siteUrl}${page.path}#service`,
+      name: page.title,
+      description: page.excerpt,
+      url: `${siteUrl}${page.path}`,
+      image: serviceImage,
+      areaServed: "Slovensko",
+      provider: { "@id": `${siteUrl}/#localbusiness` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Domov",
+          item: `${siteUrl}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: page.title,
+          item: `${siteUrl}${page.path}`,
+        },
+      ],
+    },
+  ];
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageIntro page={page} showMedia={false} />
-      <section className="wm-container mt-14 grid gap-10 lg:grid-cols-[300px_1fr]">
+      <section className="wm-container mt-14 grid gap-10 lg:grid-cols-[300px_1fr] reveal">
         <ServiceSidebar currentSlug={page.slug} />
         <div className="min-w-0">
           {children || (
@@ -53,6 +97,7 @@ export function ServicePageLayout({
           ) : null}
         </div>
       </section>
+      <ServiceCTA />
       <ContactBand />
     </>
   );

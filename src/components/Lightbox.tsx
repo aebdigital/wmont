@@ -3,6 +3,7 @@
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import type { MediaItem } from "@/lib/types";
 
 type LightboxProps = {
@@ -53,10 +54,16 @@ export function Lightbox({ images, title, activeIndex, onClose }: LightboxProps)
   }, [open, onClose, go]);
 
   if (!open) return null;
+  if (typeof document === "undefined") return null;
 
   const image = images[displayIndex];
 
-  return (
+  // Render into document.body so the fixed-position overlay is anchored to
+  // the viewport rather than any ancestor that happens to have `transform`
+  // or `will-change: transform` (e.g. our scroll-reveal sections, which
+  // would otherwise treat `position: fixed` as `position: absolute`
+  // relative to themselves and break the lightbox).
+  return createPortal(
     <div
       className="fixed inset-0 z-[100] flex animate-[lightboxFade_200ms_ease-out] items-center justify-center bg-black/88 px-4 py-6 backdrop-blur-md"
       role="dialog"
@@ -122,6 +129,7 @@ export function Lightbox({ images, title, activeIndex, onClose }: LightboxProps)
           </p>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

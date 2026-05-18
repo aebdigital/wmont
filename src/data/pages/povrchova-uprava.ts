@@ -93,11 +93,6 @@ export const pageData = {
     "type": "image",
     "src": "/assets/uploads/2023/02/pieskovanie.jpg",
     "alt": ""
-  },
-  {
-    "type": "image",
-    "src": "/assets/uploads/2023/02/Zinga-pre-mobily.png",
-    "alt": ""
   }
 ] as MediaItem[],
   videos: [] as MediaItem[],

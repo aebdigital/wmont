@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CookieConsent } from "@/components/CookieConsent";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StructuredData } from "@/components/StructuredData";
@@ -39,13 +40,22 @@ export const metadata: Metadata = {
     url: "https://www.wmont.sk/",
     siteName: brand.name,
     locale: "sk_SK",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: brand.logo,
+        width: 2048,
+        height: 768,
+        alt: brand.name
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "W - Mont s.r.o.",
     description:
-      "Moderná kovovýroba, brány, ploty, montážne služby a povrchová úprava kovov."
+      "Moderná kovovýroba, brány, ploty, montážne služby a povrchová úprava kovov.",
+    images: [brand.logo]
   }
 };
 
@@ -62,6 +72,7 @@ export default function RootLayout({
         <main>{children}</main>
         <SiteFooter />
         <CookieConsent />
+        <ScrollReveal />
       </body>
     </html>
   );

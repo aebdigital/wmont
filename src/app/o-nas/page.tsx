@@ -19,7 +19,9 @@ export default function ONasPage() {
   return (
     <>
       <PageIntro page={pageData} showMedia={false} />
-      <ContentBlocks blocks={pageData.blocks} title={pageData.title} />
+      <section className="wm-container mt-12">
+        <ContentBlocks blocks={pageData.blocks} title={pageData.title} mode="article" />
+      </section>
     </>
   );
 }

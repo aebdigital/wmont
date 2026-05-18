@@ -18,7 +18,7 @@ const googleMapsEmbedUrl = "https://maps.google.com/maps?output=embed&cid=137412
 export function ContactPage({ page }: { page: PageData }) {
   return (
     <>
-      <section className="wm-container pt-12 md:pt-16">
+      <section className="wm-container pt-12 md:pt-16" data-reveal-stagger="100">
         <p className="text-sm font-extrabold uppercase tracking-normal text-redline">
           Kontakt a cenové ponuky
         </p>
@@ -31,8 +31,8 @@ export function ContactPage({ page }: { page: PageData }) {
         </p>
       </section>
 
-      <section className="wm-container mt-10 grid gap-8 lg:grid-cols-[0.42fr_0.58fr]">
-        <div className="grid gap-4 self-start">
+      <section className="wm-container mt-10 grid gap-8 lg:grid-cols-[0.42fr_0.58fr] reveal">
+        <div className="grid gap-4 self-start" data-reveal-stagger="80">
           <ContactInfoCard
             icon={Phone}
             label="Telefón"
@@ -64,7 +64,7 @@ export function ContactPage({ page }: { page: PageData }) {
           </div>
         </div>
 
-        <div className="grid gap-5">
+        <div className="grid gap-5" data-reveal-stagger="100">
           <div className="rounded border border-line bg-white p-5 md:p-6">
             <p className="text-xs font-extrabold uppercase tracking-normal text-redline">
               Cenová ponuka

@@ -20,7 +20,7 @@ export default function GarazoveBranyPage() {
   return (
     <ServicePageLayout page={pageData} showMediaGrid={false}>
       <PdfViewer
-        src="/ZMENsENy-KATALOG-2022-verzia-10.6.2022_1657691529-1.pdf"
+        src="/ZMENsENy-KATALOG-2022-compressed.pdf"
         title="Katalóg garážových brán"
       />
       <GarageContent blocks={pageData.blocks} images={pageData.images.slice(1)} />

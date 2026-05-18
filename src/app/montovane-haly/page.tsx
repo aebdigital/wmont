@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { ContentBlocks } from "@/components/ContentBlocks";
 import { ServicePageLayout } from "@/components/ServicePageLayout";
-import { benefits, hallTypes, pageData } from "@/data/pages/montovane-haly";
+import {
+  benefits,
+  flexibilnyBlocks,
+  introBlocks,
+  komplexnaBlocks,
+  pageData,
+  scopeBlocks,
+} from "@/data/pages/montovane-haly";
 
 export const metadata: Metadata = {
   title: pageData.seoTitle || pageData.title,
@@ -18,7 +25,10 @@ export const metadata: Metadata = {
 export default function MontovaneHalyPage() {
   return (
     <ServicePageLayout page={pageData} showMediaGrid={false}>
-      <ContentBlocks blocks={pageData.blocks} title={pageData.title} mode="article" />
+      <ContentBlocks blocks={introBlocks} title={pageData.title} mode="article" />
+      <ContentBlocks blocks={komplexnaBlocks} title={pageData.title} mode="article" />
+      <ContentBlocks blocks={flexibilnyBlocks} title={pageData.title} mode="article" />
+      <ContentBlocks blocks={scopeBlocks} title={pageData.title} mode="article" />
 
       <section className="mt-12 border-t border-line pt-10">
         <h2 className="text-2xl font-extrabold text-ink md:text-3xl">
@@ -42,34 +52,6 @@ export default function MontovaneHalyPage() {
         </div>
       </section>
 
-      <section className="mt-12 border-t border-line pt-10">
-        <h2 className="text-2xl font-extrabold text-ink md:text-3xl">Typy konštrukcií</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {hallTypes.map((type) => (
-            <article
-              key={type.code}
-              className="rounded border border-line p-5 transition hover:border-ink"
-            >
-              <p className="text-xs font-extrabold uppercase tracking-wider text-redline">
-                {type.code}
-              </p>
-              <h3 className="mt-2 text-base font-extrabold leading-tight text-ink md:text-lg">
-                {type.description}
-              </h3>
-              <ul className="mt-4 grid gap-2">
-                {type.specs.map((spec) => (
-                  <li
-                    key={spec}
-                    className="border-l-2 border-redline pl-3 text-sm font-medium leading-7 text-ink/78"
-                  >
-                    {spec}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </section>
     </ServicePageLayout>
   );
 }

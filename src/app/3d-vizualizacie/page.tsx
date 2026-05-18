@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: pageData.seoTitle || pageData.title,
   description: pageData.excerpt,
   alternates: { canonical: pageData.path },
+  robots: { index: false, follow: true },
   openGraph: {
     title: pageData.seoTitle || pageData.title,
     url: pageData.path,

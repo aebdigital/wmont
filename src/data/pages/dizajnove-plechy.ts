@@ -27,7 +27,7 @@ export const pageData = {
   images: [
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/1-2-1536x2048.jpg",
+    "src": "/assets/uploads/2023/02/1-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -37,7 +37,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/2-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/2-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -47,7 +47,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/3-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/3-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -57,7 +57,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/4-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/4-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -67,7 +67,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/5-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/5-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -77,7 +77,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/6-1-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/6-1-scaled.jpg",
     "alt": ""
   },
   {
@@ -87,7 +87,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/7-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/7-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -97,7 +97,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/8-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/8-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -107,7 +107,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/9-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/9-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -117,7 +117,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/10-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/10-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -127,7 +127,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/11-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/11-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -137,7 +137,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/12-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/12-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -147,7 +147,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/13-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/13-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -157,7 +157,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/14-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/14-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -167,7 +167,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/15-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/15-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -177,7 +177,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/18-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/18-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -187,7 +187,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/16-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/16-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -197,7 +197,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/17-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/17-2-scaled.jpg",
     "alt": ""
   },
   {
@@ -207,7 +207,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/19-2-1535x2048.jpg",
+    "src": "/assets/uploads/2023/02/19-2-scaled.jpg",
     "alt": ""
   },
   {

@@ -149,11 +149,6 @@ export const pageData = {
     "type": "image",
     "src": "/assets/uploads/2023/02/287187419_1221610781932598_7694585344166312268_n.jpg",
     "alt": ""
-  },
-  {
-    "type": "image",
-    "src": "/assets/uploads/2023/02/307289215_614900510301452_5456495652805044300_n.jpg",
-    "alt": ""
   }
 ] as MediaItem[],
   videos: [] as MediaItem[],

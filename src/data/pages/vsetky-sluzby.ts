@@ -252,11 +252,6 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/91574198_693783811381967_8127411930420740096_n.jpg",
-    "alt": "Dizajnová braná"
-  },
-  {
-    "type": "image",
     "src": "/assets/uploads/2023/02/plan1_n-2048x1536.jpg",
     "alt": "3D vizualizácie"
   },

@@ -10,8 +10,8 @@ export default function HomePage() {
   return (
     <>
       <HomeHero page={pageData} />
-      <AboutSection />
       <ServicesShowcase />
+      <AboutSection />
       {galeriaData.images.length > 0 ? (
         <MarqueeGallery images={galeriaData.images.slice(0, 24)} title="Vybrané realizácie" />
       ) : null}

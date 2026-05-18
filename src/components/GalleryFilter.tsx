@@ -35,7 +35,7 @@ export function GalleryFilter({ categories, fallbackImages }: GalleryFilterProps
   const activeImages = categories.find((category) => category.label === active)?.images ?? allImages;
 
   return (
-    <section className="wm-container mt-10">
+    <section className="wm-container mt-10 reveal">
       <div className="flex flex-wrap gap-2 border-y border-line py-4">
         {categories.map((category) => (
           <button
@@ -63,7 +63,7 @@ export function GalleryFilter({ categories, fallbackImages }: GalleryFilterProps
         <p className="text-sm font-semibold text-muted">{activeImages.length} fotografií</p>
       </div>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5" data-reveal-stagger="40">
         {activeImages.map((image, index) => (
           <button
             key={`${active}-${image.src}`}

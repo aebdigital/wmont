@@ -29,7 +29,15 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  background: var(--background);
+  background-color: var(--background);
+  /* Diagonal pinstripe — tiled 8×8 SVG with a single 45° line. The tile
+     repeats both axes so the line connects edge-to-edge into one continuous
+     stripe, repeating every ~5.6 px (8 × √½) measured perpendicular to the
+     stripe. Stroke-opacity controls intensity. Sits on the body so any
+     section without its own background colour shows it through; dark
+     sections (bg-ink, ContactBand, footer, hero) cover it. */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><line x1='0' y1='8' x2='8' y2='0' stroke='%23000' stroke-opacity='0.05' stroke-width='1'/></svg>");
+  background-repeat: repeat;
   color: var(--foreground);
   font-family: Montserrat, Arial, sans-serif;
   text-rendering: optimizeLegibility;
@@ -100,5 +108,37 @@ video {
 
   to {
     opacity: 1;
+  }
+}
+
+/* Scroll-reveal: elements either marked `.reveal` directly or rendered as a
+   direct child of a `[data-reveal-stagger]` parent start hidden and fade-up
+   into place once they enter the viewport (the ScrollReveal client component
+   toggles the `is-visible` class via IntersectionObserver). The
+   `data-reveal-stagger` form lets children pre-hide from first paint without
+   needing JS to add a class — no flash-of-visible-content during hydration. */
+.reveal,
+[data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible,
+[data-reveal-stagger] > .is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  [data-reveal-stagger] > *,
+  .reveal.is-visible,
+  [data-reveal-stagger] > .is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

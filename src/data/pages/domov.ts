@@ -467,7 +467,7 @@ export const pageData = {
   },
   {
     "type": "image",
-    "src": "/assets/uploads/2023/02/DS_04066-1200x800-1.jpg",
+    "src": "/assets/uploads/2023/02/DS_04066-1200x800-1-1024x683.jpg",
     "alt": "Lakovanie konštrukcii"
   },
   {
@@ -489,11 +489,6 @@ export const pageData = {
     "type": "image",
     "src": "/assets/uploads/2023/02/vyr_1428Robus-NICE-600-FULL-KIT.png",
     "alt": "Pohony na brány"
-  },
-  {
-    "type": "image",
-    "src": "/assets/uploads/2023/02/91574198_693783811381967_8127411930420740096_n.jpg",
-    "alt": "Dizajnová braná"
   },
   {
     "type": "image",

@@ -3,9 +3,10 @@ export function GET() {
     [
       "User-agent: *",
       "Allow: /",
+      "Disallow: /3d-vizualizacie",
+      "Disallow: /ochrana-osobnych-udajov",
       "",
-      "Sitemap: https://www.wmont.sk/sitemap.xml",
-      "Host: https://www.wmont.sk"
+      "Sitemap: https://www.wmont.sk/sitemap.xml"
     ].join("\n"),
     {
       headers: {
