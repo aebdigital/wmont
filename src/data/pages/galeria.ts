@@ -1031,6 +1031,51 @@ export const pageData = {
   videos: [] as MediaItem[],
   galleryCategories: [
   {
+    "label": "Montované haly",
+    "images": [
+      {
+        "type": "image",
+        "src": "/haly/r_0024D.webp",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/haly/Fixinggroup_Lagerhalle.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/haly/industrial-structure-14-1200x675.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2024/10/358129178_845345470590287_6834957364860399295_n.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2024/10/357743403_842999187491582_3714843930669906545_n.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2024/10/357120081_838739424584225_7272509150447045897_n.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2024/10/356845363_838739417917559_5301116325792302895_n.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2024/10/356426847_838739421250892_2031610431915118359_n.jpg",
+        "alt": "Montované haly"
+      }
+    ]
+  },
+  {
     "label": "Brány a bráničky",
     "images": [ 
       {

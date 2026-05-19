@@ -50,7 +50,7 @@ export const services: ServiceInfo[] = [
     "excerpt": "Priemyselné haly – širokospektrálne využitie v priemysle, výrobe a skladovaní. Návrh a realizácia oceľových konštrukcií na mieru.",
     "image": {
       "type": "image",
-      "src": "/montaznesluzby/priemyselneamontovane.jpg",
+      "src": "/haly/r_0024D.webp",
       "alt": "Montované haly"
     }
   },
@@ -61,8 +61,8 @@ export const services: ServiceInfo[] = [
     "excerpt": "Zhotovujeme atypické stavebné zámočnícke prvky a ručne vyrábame rôzne predmety z kovov, ako sú napr. brány a súčastí oplotení, zábradlia a schodiská, mreže a pod., a následne zabezpečujeme ich montáž a prípadné opravy.",
     "image": {
       "type": "image",
-      "src": "/assets/uploads/2023/02/91740668_695601431200205_1220323306851270656_n.jpg",
-      "alt": ""
+      "src": "/assets/uploads/2023/02/95542074_718405152253166_1562507405772718080_n.jpg",
+      "alt": "Koľajnicová brána"
     }
   },
   {
@@ -72,8 +72,8 @@ export const services: ServiceInfo[] = [
     "excerpt": "Ponúkame profesionálny prenájom pracovných plošín pre výškové práce na stavbách, fasádach a v priemysle.",
     "image": {
       "type": "image",
-      "src": "/prenajomplosin/GS2668.jpg",
-      "alt": "Prenájom plošín"
+      "src": "/genie-gs-2669rt.jpg",
+      "alt": "Genie GS 2668 RT – nožnicová plošina"
     }
   },
   {

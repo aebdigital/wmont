@@ -49,11 +49,11 @@ export function HomeHero({ page }: { page: PageData }) {
             priority
           />
         ) : null}
-        <div className="absolute inset-0 bg-black/58" />
+        <div className="absolute inset-0 bg-black/68" />
         <div className="relative z-10 flex w-full items-end">
           <div className="max-w-5xl px-5 pb-8 text-white md:px-10 md:pb-12 xl:px-14 xl:pb-16" data-reveal-stagger="120">
-            <h1 className="text-balance text-5xl font-extrabold leading-[0.95] tracking-normal md:text-7xl xl:text-8xl">
-              Kovové brány, ploty a kovovýroba na mieru
+            <h1 className="text-balance text-4xl font-extrabold leading-tight tracking-normal md:text-6xl xl:text-7xl">
+              Montované haly, kovové brány, ploty a kovovýroba na mieru
             </h1>
             <p className="mt-6 max-w-3xl text-pretty text-base font-medium leading-8 text-white/78 md:text-lg">
               {previewText(page, 230)}

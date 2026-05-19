@@ -10,7 +10,16 @@ import { brand, navigation, services } from "@/lib/site";
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const servicePaths = services.map((service) => service.path);
+
+  useEffect(() => {
+    const closeTimer = window.setTimeout(() => {
+      setServicesOpen(false);
+    }, 320);
+
+    return () => window.clearTimeout(closeTimer);
+  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;
@@ -54,9 +63,17 @@ export function SiteHeader() {
 
               if (isServices) {
                 return (
-                  <div key={item.href} className="group relative">
+                  <div
+                    key={item.href}
+                    className="relative"
+                    onMouseEnter={() => setServicesOpen(true)}
+                    onMouseLeave={() => setServicesOpen(false)}
+                    onFocus={() => setServicesOpen(true)}
+                  >
                     <button
                       type="button"
+                      onClick={() => setServicesOpen((value) => !value)}
+                      aria-expanded={servicesOpen}
                       className={`inline-flex items-center gap-2 rounded px-4 py-3 text-base font-extrabold transition ${
                         active ? "bg-ink text-white" : "text-ink hover:bg-neutral-100"
                       }`}
@@ -64,7 +81,13 @@ export function SiteHeader() {
                       {item.label}
                       <ChevronDown aria-hidden="true" size={16} />
                     </button>
-                    <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                    <div
+                      className={`absolute left-1/2 top-full -translate-x-1/2 pt-3 transition ${
+                        servicesOpen
+                          ? "visible opacity-100"
+                          : "invisible pointer-events-none opacity-0"
+                      }`}
+                    >
                       <div className="w-[min(95vw,1100px)]">
                         <div className="grid grid-cols-5 gap-3 border border-line bg-white p-4 shadow-soft">
                           {services.map((service) => (
@@ -80,7 +103,11 @@ export function SiteHeader() {
                                     alt=""
                                     fill
                                     sizes="(min-width: 1280px) 18vw, 22vw"
-                                    className="object-cover transition duration-500 group-hover/card:scale-[1.08]"
+                                    className={`transition duration-500 group-hover/card:scale-[1.08] ${
+                                      service.slug === "prenajom-plosin"
+                                        ? "object-contain p-2"
+                                        : "object-cover"
+                                    }`}
                                   />
                                 ) : null}
                               </span>

@@ -121,7 +121,7 @@ export function ServicesShowcase() {
         </h2>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4" data-reveal-stagger="80">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3" data-reveal-stagger="80">
         {SHOWCASE_ORDER.map((slug) => {
           const service = services.find((s) => s.slug === slug);
           if (!service) return null;
@@ -140,7 +140,9 @@ export function ServicesShowcase() {
                       alt={service.image.alt || service.title}
                       fill
                       sizes="(min-width: 1280px) 22vw, (min-width: 768px) 42vw, 90vw"
-                      className="object-cover transition duration-500 group-hover:scale-[1.06]"
+                      className={`transition duration-500 group-hover:scale-[1.06] ${
+                        service.slug === "prenajom-plosin" ? "object-contain p-3" : "object-cover"
+                      }`}
                     />
                   ) : null}
                   <span className="pointer-events-none absolute bottom-3 left-3 inline-flex h-9 items-center justify-center bg-ink px-4 text-sm font-extrabold text-white transition group-hover:bg-redline">

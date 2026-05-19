@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ContentBlocks } from "@/components/ContentBlocks";
+import { LiftProductPhotos } from "@/components/LiftProductPhotos";
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { liftProducts, pageData } from "@/data/pages/prenajom-plosin";
 
@@ -38,26 +38,7 @@ export default function PrenajomPlosinPage() {
             </p>
           ) : null}
 
-          <div
-            className={`mt-6 grid gap-4 ${
-              product.photos.length > 1 ? "md:grid-cols-2" : "max-w-2xl"
-            }`}
-          >
-            {product.photos.map((photo) => (
-              <div
-                key={photo.src}
-                className="relative aspect-[4/3] overflow-hidden rounded border border-line bg-neutral-100"
-              >
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(min-width: 1024px) 45vw, 90vw"
-                  className="object-contain p-2"
-                />
-              </div>
-            ))}
-          </div>
+          <LiftProductPhotos photos={product.photos} productName={product.name} />
 
           {product.specs && product.specs.length > 0 ? (
             <div className="mt-8">
