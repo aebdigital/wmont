@@ -71,7 +71,6 @@ export const liftProducts: LiftProduct[] = [
   },
   {
     name: "Genie GS 2668 RT",
-    meta: "Rok: 2008 · Umiestnenie: Prešov 080 05",
     description:
       "Nožnicová terénna plošina s veľkou pracovnou platformou a pohonom 4×4. Vhodná pre montážne, stavebné a údržbárske práce v exteriéri aj na nerovnom teréne.",
     photos: [
