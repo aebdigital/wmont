@@ -82,7 +82,7 @@ video {
 .footer-link::after {
   position: absolute;
   left: 0;
-  bottom: -0.18rem;
+  bottom: 2px;
   height: 1px;
   width: 100%;
   content: "";
@@ -92,11 +92,13 @@ video {
   transition: transform 260ms ease;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link-group:hover .footer-link {
   color: #ffffff;
 }
 
-.footer-link:hover::after {
+.footer-link:hover::after,
+.footer-link-group:hover .footer-link::after {
   transform: scaleX(1);
 }
 

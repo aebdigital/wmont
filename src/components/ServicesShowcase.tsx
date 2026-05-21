@@ -1,12 +1,51 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/site";
 import { pageData as vsetkyData } from "@/data/pages/vsetky-sluzby";
 import type { ContentBlock } from "@/lib/types";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+function ParallaxCardImage({ src, alt, slug }: { src: string; alt: string; slug: string }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  // Moves the photo vertical offset from -12% to 12% as it crosses the screen
+  const y = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
+
+  return (
+    <div
+      ref={containerRef}
+      className="relative aspect-[4/3] overflow-hidden bg-neutral-100"
+    >
+      <motion.div
+        style={{ y, scale: 1.25 }}
+        className="absolute inset-0 h-full w-full"
+      >
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(min-width: 1280px) 22vw, (min-width: 768px) 42vw, 90vw"
+          className="object-cover"
+          priority
+        />
+      </motion.div>
+      <span className="pointer-events-none absolute bottom-3 left-3 inline-flex h-9 items-center justify-center bg-ink px-4 text-sm font-extrabold text-white transition group-hover:bg-redline">
+        Viac
+      </span>
+    </div>
+  );
+}
 
 const SERVICE_HEADING: Record<string, string> = {
   "kovovyroba-ploty-brany": "Kovovýroba",
-  "sklenene-zabradlie-logie-pergoly": "Sklenené zábradlie, logie a pergoly",
+  "sklenene-zabradlie-logie-pergoly": "Pergoly, terasy, logie a sklenené terasy",
   "pohony-na-brany": "Pohony na brány a závory",
   "dizajnove-plechy": "Dizajnové plechy",
   "montazne-sluzby": "Montážne služby",
@@ -111,7 +150,7 @@ function getBlocksForSlug(slug: string): ContentBlock[] {
 
 export function ServicesShowcase() {
   return (
-    <section id="sluzby" className="wm-container mt-16 scroll-mt-28 reveal">
+    <section id="sluzby" className="wm-container scroll-mt-28 reveal">
       <div className="mb-10 text-center md:mb-14">
         <p className="text-sm font-extrabold uppercase tracking-normal text-redline">
           Naše služby
@@ -133,22 +172,30 @@ export function ServicesShowcase() {
                 href={service.path}
                 className="group flex w-full flex-col border border-ink/0 p-3 transition-colors duration-500 ease-in-out hover:border-ink"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
-                  {service.image ? (
-                    <Image
+                {service.image ? (
+                  service.slug === "montovane-haly" ? (
+                    <ParallaxCardImage
                       src={service.image.src}
                       alt={service.image.alt || service.title}
-                      fill
-                      sizes="(min-width: 1280px) 22vw, (min-width: 768px) 42vw, 90vw"
-                      className={`transition duration-500 group-hover:scale-[1.06] ${
-                        service.slug === "prenajom-plosin" ? "object-contain p-3" : "object-cover"
-                      }`}
+                      slug={service.slug}
                     />
-                  ) : null}
-                  <span className="pointer-events-none absolute bottom-3 left-3 inline-flex h-9 items-center justify-center bg-ink px-4 text-sm font-extrabold text-white transition group-hover:bg-redline">
-                    Viac
-                  </span>
-                </div>
+                  ) : (
+                    <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                      <Image
+                        src={service.image.src}
+                        alt={service.image.alt || service.title}
+                        fill
+                        sizes="(min-width: 1280px) 22vw, (min-width: 768px) 42vw, 90vw"
+                        className={`transition duration-500 group-hover:scale-[1.06] ${
+                          service.slug === "prenajom-plosin" ? "object-contain p-3" : "object-cover"
+                        }`}
+                      />
+                      <span className="pointer-events-none absolute bottom-3 left-3 inline-flex h-9 items-center justify-center bg-ink px-4 text-sm font-extrabold text-white transition group-hover:bg-redline">
+                        Viac
+                      </span>
+                    </div>
+                  )
+                ) : null}
 
                 <h3 className="mt-6 text-balance text-2xl font-extrabold leading-tight text-ink">
                   {service.title}

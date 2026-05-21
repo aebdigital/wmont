@@ -1072,6 +1072,16 @@ export const pageData = {
         "type": "image",
         "src": "/assets/uploads/2024/10/356426847_838739421250892_2031610431915118359_n.jpg",
         "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2023/02/275180208_1157637841663226_596479098236920788_n.jpg",
+        "alt": "Montované haly"
+      },
+      {
+        "type": "image",
+        "src": "/assets/uploads/2023/02/275072415_1157637881663222_2796677234975563259_n.jpg",
+        "alt": "Montované haly"
       }
     ]
   },
@@ -1992,17 +2002,7 @@ export const pageData = {
       },
       {
         "type": "image",
-        "src": "/assets/uploads/2023/02/275180208_1157637841663226_596479098236920788_n.jpg",
-        "alt": "Ostatné"
-      },
-      {
-        "type": "image",
         "src": "/assets/uploads/2023/02/275177615_1157995261627484_4537551717149893366_n.jpg",
-        "alt": "Ostatné"
-      },
-      {
-        "type": "image",
-        "src": "/assets/uploads/2023/02/275072415_1157637881663222_2796677234975563259_n.jpg",
         "alt": "Ostatné"
       },
       {

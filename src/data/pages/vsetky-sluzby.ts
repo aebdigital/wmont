@@ -211,7 +211,7 @@ export const pageData = {
   {
     "type": "heading",
     "level": 3,
-    "text": "Sklenené zábradlie, logie a pergoly"
+    "text": "Pergoly, terasy, logie a sklenené terasy"
   },
   {
     "type": "heading",

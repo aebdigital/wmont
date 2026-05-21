@@ -10,12 +10,22 @@ export default function HomePage() {
   return (
     <>
       <HomeHero page={pageData} />
-      <ServicesShowcase />
-      <AboutSection />
-      {galeriaData.images.length > 0 ? (
-        <MarqueeGallery images={galeriaData.images.slice(0, 24)} title="Vybrané realizácie" />
-      ) : null}
-      <ContactBand />
+      <div
+        className="relative z-10 pt-16 pb-24 -mb-24 shadow-2xl"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(244,245,245,0.76),rgba(244,245,245,0.76)), url("/steelbg.jpg")',
+          backgroundSize: '100% auto',
+          backgroundRepeat: 'repeat-y',
+          backgroundPosition: 'top center',
+        }}
+      >
+        <ServicesShowcase />
+        <AboutSection />
+        {galeriaData.images.length > 0 ? (
+          <MarqueeGallery images={galeriaData.images.slice(0, 24)} title="Vybrané realizácie" />
+        ) : null}
+        <ContactBand />
+      </div>
     </>
   );
 }

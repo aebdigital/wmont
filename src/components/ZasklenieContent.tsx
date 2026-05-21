@@ -7,7 +7,9 @@ type ZasklenieContentProps = {
   faqItems: FAQItem[];
 };
 
-const sectionImages: Record<string, { src: string; alt: string }> = {
+type ImageDef = { src: string; alt: string; caption?: string };
+
+const sectionImages: Record<string, ImageDef | ImageDef[]> = {
   "Sklenené zábradlie": {
     src: "/sklenene/sklenene-zabradlie.jpg",
     alt: "Sklenené zábradlie"
@@ -20,10 +22,17 @@ const sectionImages: Record<string, { src: string; alt: string }> = {
     src: "/sklenene/posuvnezasklenie.jpg",
     alt: "Posuvné zasklenie terás"
   },
-  Pergola: {
-    src: "/sklenene/pergola.jpg",
-    alt: "Pergola"
-  },
+  Pergola: [
+    {
+      src: "/sklenene/pergola.jpg",
+      alt: "Pergola"
+    },
+    {
+      src: "/news/pergola.jpg",
+      alt: "Pergola",
+      caption: "Prístrešky s rozmerom 9x7m vďaka premosteniu"
+    }
+  ],
   "Systém zasklenia bolkónov a logií": {
     src: "/sklenene/systemzaskleniabalkonovalogii.jpg",
     alt: "Systém zasklenia balkónov a logií"
@@ -31,30 +40,41 @@ const sectionImages: Record<string, { src: string; alt: string }> = {
 };
 
 const imageAfterBlockIndex: Record<number, string> = {
-  8: "Sklenené zábradlie",
-  10: "Zimné záhrady",
-  12: "Posuvné zasklenie terás",
-  18: "Pergola",
-  22: "Systém zasklenia bolkónov a logií"
+  4: "Pergola",
+  9: "Posuvné zasklenie terás",
+  11: "Zimné záhrady",
+  15: "Systém zasklenia bolkónov a logií",
+  22: "Sklenené zábradlie"
 };
 
 function SectionImage({ title }: { title: string }) {
-  const image = sectionImages[title];
+  const data = sectionImages[title];
 
-  if (!image) return null;
+  if (!data) return null;
+
+  const images = Array.isArray(data) ? data : [data];
 
   return (
-    <figure className="my-8 overflow-hidden rounded border border-line bg-neutral-100">
-      <div className="relative aspect-[16/9]">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          fill
-          sizes="(min-width: 1024px) 58vw, 90vw"
-          className="object-cover"
-        />
-      </div>
-    </figure>
+    <div className={`my-8 grid gap-4 ${images.length > 1 ? "md:grid-cols-2" : ""}`}>
+      {images.map((img, i) => (
+        <figure key={i} className="relative overflow-hidden rounded border border-line bg-neutral-100">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              sizes={images.length > 1 ? "(min-width: 768px) 50vw, 90vw" : "(min-width: 1024px) 58vw, 90vw"}
+              className="object-cover"
+            />
+          </div>
+          {img.caption && (
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-12 text-sm font-bold leading-tight text-white drop-shadow-md md:text-base">
+              {img.caption}
+            </figcaption>
+          )}
+        </figure>
+      ))}
+    </div>
   );
 }
 

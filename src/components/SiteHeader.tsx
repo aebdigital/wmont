@@ -1,17 +1,80 @@
 "use client";
 
-import { ChevronDown, Facebook, Instagram, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useId } from "react";
 import { brand, navigation, services } from "@/lib/site";
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="12" fill="#1877F2" />
+      <path
+        fill="#ffffff"
+        d="M14 14.5h2.5l.5-3H14V9.5c0-.8.2-1.3 1.3-1.3H17V5.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2V11.5H8v3h2.6V22h3.4v-7.5z"
+      />
+    </svg>
+  );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  const gradId = useId();
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      className={className}
+      aria-hidden="true"
+    >
+      <defs>
+        <radialGradient id={gradId} cx="30%" cy="107%" r="130%">
+          <stop offset="0%" stopColor="#fdf497" />
+          <stop offset="5%" stopColor="#fdf497" />
+          <stop offset="45%" stopColor="#fd5949" />
+          <stop offset="60%" stopColor="#d6249f" />
+          <stop offset="90%" stopColor="#285AEB" />
+        </radialGradient>
+      </defs>
+      <rect width="22" height="22" x="1" y="1" rx="5" fill={`url(#${gradId})`} />
+      <rect x="5" y="5" width="14" height="14" rx="4" stroke="#ffffff" strokeWidth="1.5" fill="none" />
+      <circle cx="12" cy="12" r="3" stroke="#ffffff" strokeWidth="1.5" fill="none" />
+      <circle cx="15.5" cy="8.5" r="1" fill="#ffffff" />
+    </svg>
+  );
+}
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const servicePaths = services.map((service) => service.path);
+
+  const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) {
+      setScrolled(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
+  const showScrolled = scrolled || open;
 
   useEffect(() => {
     const closeTimer = window.setTimeout(() => {
@@ -32,7 +95,15 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-line bg-white/[0.98] backdrop-blur-lg">
+      <header
+        className={`left-0 right-0 z-50 transition-all duration-300 ${
+          isHome ? "fixed top-0" : "sticky top-0"
+        } ${
+          showScrolled
+            ? "border-b border-white/10 bg-white/45 backdrop-blur-2xl text-ink shadow-sm"
+            : "border-transparent bg-transparent text-white"
+        }`}
+      >
         <div className="wm-container flex min-h-24 items-center justify-between gap-5">
           <Link
             href="/"
@@ -40,14 +111,14 @@ export function SiteHeader() {
             aria-label="W - Mont s.r.o. domov"
             onClick={() => setOpen(false)}
           >
-            <span className="relative flex h-16 w-36 shrink-0 items-center md:h-20 md:w-44">
-              <Image
-                src={brand.logo}
-                alt="W - Mont s.r.o."
-                fill
-                sizes="(min-width: 768px) 176px, 144px"
-                className="object-contain object-left"
-                priority
+            <span className="relative flex h-16 w-fit shrink-0 overflow-hidden rounded md:h-20">
+              <video
+                src="/assets/uploads/2023/02/0001-0400.mp4"
+                className="h-full w-auto object-contain"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
             </span>
           </Link>
@@ -75,7 +146,13 @@ export function SiteHeader() {
                       onClick={() => setServicesOpen((value) => !value)}
                       aria-expanded={servicesOpen}
                       className={`inline-flex items-center gap-2 rounded px-4 py-3 text-base font-extrabold transition ${
-                        active ? "bg-ink text-white" : "text-ink hover:bg-neutral-100"
+                        active
+                          ? showScrolled
+                            ? "bg-ink text-white"
+                            : "bg-white text-ink"
+                          : showScrolled
+                          ? "text-ink hover:bg-ink/10"
+                          : "text-white hover:bg-white/15"
                       }`}
                     >
                       {item.label}
@@ -128,7 +205,13 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   className={`rounded px-4 py-3 text-base font-extrabold transition ${
-                    active ? "bg-ink text-white" : "text-ink hover:bg-neutral-100"
+                    active
+                      ? showScrolled
+                        ? "bg-ink text-white"
+                        : "bg-white text-ink"
+                      : showScrolled
+                      ? "text-ink hover:bg-ink/10"
+                      : "text-white hover:bg-white/15"
                   }`}
                 >
                   {item.label}
@@ -137,16 +220,16 @@ export function SiteHeader() {
             })}
           </nav>
 
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className="hidden items-center gap-4 lg:flex">
             <a
               href={brand.facebook}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
               title="Facebook"
-              className="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+              className="inline-flex items-center justify-center transition-transform hover:scale-110"
             >
-              <Facebook aria-hidden="true" size={18} />
+              <FacebookIcon className="h-7 w-7" />
             </a>
             <a
               href={brand.instagram}
@@ -154,13 +237,15 @@ export function SiteHeader() {
               rel="noopener noreferrer"
               aria-label="Instagram"
               title="Instagram"
-              className="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+              className="inline-flex items-center justify-center transition-transform hover:scale-110"
             >
-              <Instagram aria-hidden="true" size={18} />
+              <InstagramIcon className="h-7 w-7" />
             </a>
             <a
               href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`}
-              className="ml-1 inline-flex h-11 items-center gap-2 rounded bg-redline px-4 text-sm font-bold text-white transition hover:bg-black"
+              className={`ml-1 inline-flex h-11 items-center gap-2 rounded px-4 text-sm font-bold text-white transition ${
+                showScrolled ? "bg-redline hover:bg-black" : "bg-redline hover:bg-white hover:text-ink"
+              }`}
             >
               <Phone aria-hidden="true" size={18} />
               <span>{brand.phone}</span>
@@ -169,7 +254,11 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded border border-line text-ink transition hover:border-ink lg:hidden"
+            className={`inline-flex h-11 w-11 items-center justify-center rounded border transition ${
+              showScrolled
+                ? "border-line text-ink hover:border-ink"
+                : "border-white/34 text-white hover:border-white"
+            } lg:hidden`}
             aria-label={open ? "Zatvoriť menu" : "Otvoriť menu"}
             aria-expanded={open}
             aria-controls="mobile-menu-panel"
@@ -261,7 +350,7 @@ export function SiteHeader() {
                 className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded border border-line text-sm font-bold text-ink"
                 onClick={() => setOpen(false)}
               >
-                <Facebook aria-hidden="true" size={18} />
+                <FacebookIcon className="h-5 w-5 text-[#1877F2]" />
                 Facebook
               </a>
               <a
@@ -272,7 +361,7 @@ export function SiteHeader() {
                 className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded border border-line text-sm font-bold text-ink"
                 onClick={() => setOpen(false)}
               >
-                <Instagram aria-hidden="true" size={18} />
+                <InstagramIcon className="h-5 w-5 text-[#E1306C]" />
                 Instagram
               </a>
             </div>

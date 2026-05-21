@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --hostname 127.0.0.1 --port 3007",
-    "dev:clean": "rm -rf .next && next dev --hostname 127.0.0.1 --port 3007",
+    "dev": "next dev --hostname 127.0.0.1 --port 3008",
+    "dev:clean": "rm -rf .next && next dev --hostname 127.0.0.1 --port 3008",
     "dev:3000": "next dev --hostname 127.0.0.1 --port 3000",
     "check": "tsc --noEmit",
     "build": "next build",
-    "start": "next start --hostname 127.0.0.1 --port 3007",
+    "start": "next start --hostname 127.0.0.1 --port 3008",
     "lint": "next lint",
     "generate:content": "node scripts/generate-content.mjs"
   },

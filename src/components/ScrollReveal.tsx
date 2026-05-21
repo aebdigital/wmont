@@ -38,7 +38,7 @@ export function ScrollReveal() {
           if (child instanceof HTMLElement) {
             // Only stagger the first 8 elements (typical initial fold) to preserve
             // the cascade effect, and let subsequent scrolled items reveal instantly.
-            const delay = i < 8 ? i * step : 0;
+            const delay = i < 12 ? i * step : 0;
             child.style.setProperty("--reveal-delay", `${delay}ms`);
             if (!child.classList.contains("is-visible")) {
               observer.observe(child);
