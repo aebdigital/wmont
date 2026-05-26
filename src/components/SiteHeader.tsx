@@ -104,6 +104,12 @@ export function SiteHeader() {
             : "border-transparent bg-transparent text-white"
         }`}
       >
+        {/* Dark gradient overlay behind header elements when transparent */}
+        <div
+          className={`absolute inset-0 -z-10 bg-gradient-to-b from-black via-black/80 to-transparent transition-opacity duration-300 ${
+            showScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        />
         <div className="wm-container flex min-h-24 items-center justify-between gap-5">
           <Link
             href="/"
@@ -114,11 +120,12 @@ export function SiteHeader() {
             <span className="relative flex h-16 w-fit shrink-0 overflow-hidden rounded md:h-20">
               <video
                 src="/assets/uploads/2023/02/0001-0400.mp4"
-                className="h-full w-auto object-contain"
+                className="h-full w-auto object-contain pointer-events-none"
                 autoPlay
                 muted
                 loop
                 playsInline
+                disablePictureInPicture
               />
             </span>
           </Link>

@@ -120,7 +120,7 @@ export const pageData = {
     "type": "image_right",
     "level": null,
     "text": "Priemyselné a montované haly",
-    "src": "/montaznesluzby/priemyselneamontovane.jpg"
+    "src": "/haly/r_0024D.webp"
   },
   {
     "type": "heading",

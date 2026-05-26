@@ -101,7 +101,7 @@ export const pageData = {
   {
     "type": "heading",
     "level": 3,
-    "text": "Pohony na brány a závory"
+    "text": "Brány a pohony"
   },
   {
     "type": "heading",

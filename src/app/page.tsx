@@ -17,6 +17,7 @@ export default function HomePage() {
           backgroundSize: '100% auto',
           backgroundRepeat: 'repeat-y',
           backgroundPosition: 'top center',
+          backgroundAttachment: 'fixed',
         }}
       >
         <ServicesShowcase />

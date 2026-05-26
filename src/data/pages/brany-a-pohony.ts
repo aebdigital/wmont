@@ -1,13 +1,28 @@
 import type { ContentBlock, MediaItem, GalleryCategory } from "@/lib/types";
 
 export const pageData = {
-  slug: "pohony-na-brany",
-  path: "/pohony-na-brany",
-  title: "Pohony na brány",
-  seoTitle: "Chytré brány, závory a garážove brany - wmont",
-  excerpt: "Motorizované brány sú prvým krokom k pohodlnejšiemu životu.Tiež sa vám nechce neustále vystupovať z auta, aby ste svoju bránu otvorili, následne prešli a potom zase za sebou zavreli? Nemusíte! Dnes je motorizácia brán bežným prvkom domácnosti. Otvorte svoju bránu z pohodlia auta diaľkovým ovládačom alebo mobilným telefónm.",
+  slug: "brany-a-pohony",
+  path: "/brany-a-pohony",
+  title: "Brány a pohony",
+  seoTitle: "Brány a pohony na brány - wmont",
+  excerpt: "Výroba brán, plotov a oplotení pre rodinné domy a priemyselné areály. Ponúkame tiež motorizáciu vjazdových brán pre väčšie pohodlie a bezpečnosť s inteligentným ovládaním Nice a Key.",
   isService: true,
   blocks: [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Oplotenie, brány a ploty"
+  },
+  {
+    "type": "text",
+    "level": null,
+    "text": "Výroba brán, plotov a zábradlí pre rodinné domy, oplotenie pozemkov, záhrad. Podľa zvoleného stupňa bezpečnosti a estetiky pre Vás na mieru vyrobíme plot v požadovanej výške. Namontujeme a správne osadíme bránu."
+  },
+  {
+    "type": "text",
+    "level": null,
+    "text": "Ploty a brány je možné vyrobiť v rôznych povrchových úpravách. Kov vieme opracovať pieskovaním, pozinkovaním, práškovaním. Nie je problém pracovať s rôznymi materiálmi, máme techniku na zváranie železa a hliníka. Neváhajte a kontaktujte nás s Vašou požiadavkou, pripravíme pre Vás nezáväznú cenovú ponuku na výrobu brán, plotov, oplotení a zábradlí."
+  },
   {
     "type": "heading",
     "level": 2,

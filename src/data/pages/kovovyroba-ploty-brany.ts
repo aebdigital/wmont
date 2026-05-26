@@ -5,28 +5,113 @@ export const pageData = {
   path: "/kovovyroba-ploty-brany",
   title: "Kovovýroba",
   seoTitle: "Zákazková kovovýroba a stavebné zámočníctvo - wmont",
-  excerpt: "Zhotovujeme atypické stavebné zámočnícke prvky a ručne vyrábame rôzne predmety z kovov, ako sú napr. brány a súčastí oplotení, zábradlia a schodiská, mreže a pod., a následne zabezpečujeme ich montáž a prípadné opravy.",
+  excerpt: "V spoločnosti W‑mont sa špecializujeme na profesionálnu kovovýrobu z ocele, nerezu a hliníka. Vyrábame brány, ploty, zábradlia, prístrešky, schodiská, oceľové a nerezové konštrukcie, ako aj hliníkové doplnky a prvky podľa individuálnych požiadaviek zákazníka.",
   isService: true,
   blocks: [
   {
     "type": "heading",
     "level": 2,
-    "text": "Kovovýroba – brány a ploty"
+    "text": "Kovovýroba na mieru – oceľ, nerez aj hliník"
   },
   {
     "type": "text",
     "level": null,
-    "text": "Zhotovujeme atypické stavebné zámočnícke prvky a ručne vyrábame rôzne predmety z kovov, ako sú napr. brány a súčastí oplotení, zábradlia a schodiská, mreže a pod., a následne zabezpečujeme ich montáž a prípadné opravy."
+    "text": "V spoločnosti W‑mont sa špecializujeme na profesionálnu kovovýrobu z ocele, nerezu a hliníka. Vyrábame brány, ploty, zábradlia, prístrešky, schodiská, oceľové a nerezové konštrukcie, ako aj hliníkové doplnky a prvky podľa individuálnych požiadaviek zákazníka."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Nerez a hliník – moderné riešenia s dlhou životnosťou"
   },
   {
     "type": "text",
     "level": null,
-    "text": "Zámočnícke prvky a výrobky vyhotovujeme na základe individuálnych požiadaviek a potrieb našich klientov, zväčša po dodaní výkresovej dokumentácie príp. jednoduchej skice, alebo fotografie."
+    "text": "Nerez (INOX) – ideálny pre exteriér aj interiér, vysoká odolnosť voči korózii, moderný vzhľad."
   },
   {
     "type": "text",
     "level": null,
-    "text": "Každý nami vyhotovený výrobok je jedinečný a originálny. Všetky výrobky sme pre maximálne zachovanie ich vlastností a životnosti schopní ochrániť vhodnou povrchovou úpravou. Túto zabezpečujeme dodávateľským spôsobom cez našich obchodných partnerov."
+    "text": "Hliník – ľahký, pevný, bezúdržbový materiál vhodný na brány, výplne, prístrešky a dizajnové prvky."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Kvalita, ktorá vydrží"
+  },
+  {
+    "type": "text",
+    "level": null,
+    "text": "Používame certifikované materiály a moderné technológie, ktoré zaručujú presnosť, pevnosť a estetický vzhľad. Každý projekt navrhujeme tak, aby spĺňal technické normy a bezpečnostné požiadavky."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Kompletný servis od návrhu po montáž"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "technické zameranie a konzultácia"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "3D vizualizácie a výkresová dokumentácia"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "výroba oceľových, nerezových a hliníkových prvkov"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "povrchová úprava (žiarové zinkovanie, práškové lakovanie, brúsenie nerezu)"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "profesionálna montáž"
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Prečo si vybrať W‑mont"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "dlhoročné skúsenosti v kovovýrobe"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "špecializácia na oceľ, nerez aj hliník"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "presné spracovanie a kvalitné materiály"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "rýchle dodacie termíny"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "férové ceny a spoľahlivá komunikácia"
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Pôsobíme v celom regióne"
+  },
+  {
+    "type": "text",
+    "level": null,
+    "text": "Realizujeme zákazky v Rimavskej Sobote, Lučenci, Revúcej, Banskej Bystrici a okolí."
   },
   {
     "type": "heading",
@@ -189,21 +274,6 @@ export const pageData = {
     "type": "text",
     "level": null,
     "text": "Hotový výrobok pre zákazníkov vieme bez problémov doručiť na miesto konečného určenia a tiež poskytujeme aj montážne služby. Služby kovovýroby poskytujeme prioritne pre stredné Slovensko."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Oplotenie, brány a ploty"
-  },
-  {
-    "type": "text",
-    "level": null,
-    "text": "Výroba brán, plotov a zábradlí pre rodinné domy, oplotenie pozemkov, záhrad. Podľa zvoleného stupňa bezpečnosti a estetiky pre Vás na mieru vyrobíme plot v požadovanej výške. Namontujeme a správne osadíme bránu."
-  },
-  {
-    "type": "text",
-    "level": null,
-    "text": "Ploty a brány je možné vyrobiť v rôznych povrchových úpravách. Kov vieme opracovať pieskovaním, pozinkovaním, práškovaním. Nie je problém pracovať s rôznymi materiálmi, máme techniku na zváranie železa a hliníka. Neváhajte a kontaktujte nás s Vašou požiadavkou, pripravíme pre Vás nezáväznú cenovú ponuku na výrobu brán, plotov, oplotení a zábradlí."
   },
   {
     "type": "heading",

@@ -77,6 +77,17 @@ export const services: ServiceInfo[] = [
     }
   },
   {
+    "slug": "brany-a-pohony",
+    "path": "/brany-a-pohony",
+    "title": "Brány a pohony",
+    "excerpt": "Výroba brán, plotov a oplotení pre rodinné domy a priemyselné areály. Ponúkame tiež motorizáciu vjazdových brán pre väčšie pohodlie a bezpečnosť s inteligentným ovládaním Nice a Key.",
+    "image": {
+      "type": "image",
+      "src": "/assets/uploads/2023/02/315039930_662985928826243_7636035703157153224_n.jpg",
+      "alt": ""
+    }
+  },
+  {
     "slug": "garazove-brany-zavory",
     "path": "/garazove-brany-zavory",
     "title": "Garážové brány",
@@ -95,17 +106,6 @@ export const services: ServiceInfo[] = [
     "image": {
       "type": "image",
       "src": "/news/pergola.jpg",
-      "alt": ""
-    }
-  },
-  {
-    "slug": "pohony-na-brany",
-    "path": "/pohony-na-brany",
-    "title": "Pohony na brány",
-    "excerpt": "Motorizované brány sú prvým krokom k pohodlnejšiemu životu.Tiež sa vám nechce neustále vystupovať z auta, aby ste svoju bránu otvorili, následne prešli a potom zase za sebou zavreli? Nemusíte! Dnes je motorizácia brán bežným prvkom domácnosti. Otvorte svoju bránu z pohodlia auta diaľkovým ovládačom alebo mobilným telefónm.",
-    "image": {
-      "type": "image",
-      "src": "/assets/uploads/2023/02/315039930_662985928826243_7636035703157153224_n.jpg",
       "alt": ""
     }
   },

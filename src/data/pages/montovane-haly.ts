@@ -13,6 +13,11 @@ export const introBlocks: ContentBlock[] = [
     level: null,
     text: "Realizujeme priemyselné a skladové haly v plnom rozsahu – od prvej obhliadky pozemku až po odovzdanie hotovej stavby pripravenej na okamžitú prevádzku. Rozumieme tomu, že každý zákazník je v inom bode prípravy: niekto má len pozemok a víziu, iný už hotové základy a hľadá partnera, ktorý dotiahne zvyšok. Spoluprácu preto vždy nastavujeme podľa toho, kde sa práve nachádzate.",
   },
+  {
+    type: "text",
+    level: null,
+    text: "Priemyselné haly z našej dielne poskytujú širokospektrálne využitie v oblasti priemyslu, výroby, logistiky a skladovania. Pri ich projekcii a montáži kladieme dôraz na maximálnu efektívnosť využitia priestoru, a to nielen plošne, ale aj výškovo, s cieľom uľahčiť vašu internú prevádzku. Všetky naše stavby spĺňajú prísne technické normy a predpisy pre dlhodobú bezpečnosť a stabilitu.",
+  },
 ];
 
 export const komplexnaBlocks: ContentBlock[] = [
