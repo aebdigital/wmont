@@ -113,24 +113,45 @@ export function PohonyContent({ blocks, guideImage, certificates }: PohonyConten
       </p>
     );
 
-    if (index === 21 && guideImage) {
-      rendered.push(
-        <FramedImage
-          key="pohony-type-image"
-          image={guideImage}
-          title="Typy vjazdových brán"
-          variant="contain"
-        />
-      );
-    }
   });
 
   flushList("list-final");
 
+  const brandPhotos = [
+    { name: "CAME", src: "/pohony/CAME.jpg" },
+    { name: "KEY", src: "/pohony/KEY.webp" },
+    { name: "NICE", src: "/pohony/NICE.webp" },
+    { name: "SOMMER", src: "/pohony/sommer.jpg" },
+  ];
+
   return (
     <>
       <section className="border-t border-line pt-10">
-        <div className="grid gap-5">{rendered}</div>
+        <div className="grid gap-5">
+          {rendered}
+          <div key="pohony-brands-grid" className="my-8 grid grid-cols-2 gap-3 lg:grid-cols-4">
+            {brandPhotos.map((photo) => (
+              <div
+                key={photo.name}
+                className="group relative aspect-square overflow-hidden rounded border border-line bg-ink text-left"
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.name}
+                  fill
+                  sizes="(min-width: 1024px) 28vw, (min-width: 640px) 42vw, 45vw"
+                  className="object-cover opacity-82 transition duration-500 group-hover:scale-[1.05] group-hover:opacity-100"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/26 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-4">
+                  <p className="text-balance text-lg font-extrabold leading-tight text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.85)] md:text-xl">
+                    {photo.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {certificates.length ? (
