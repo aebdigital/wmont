@@ -22,14 +22,7 @@ export default function HomePage() {
     <>
       <HomeHero page={pageData} />
       <div
-        className="relative z-10 pt-16 pb-24 -mb-24 shadow-2xl"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(244,245,245,0.76),rgba(244,245,245,0.76)), url("/steelbg.jpg")',
-          backgroundSize: '100% auto',
-          backgroundRepeat: 'repeat-y',
-          backgroundPosition: 'top center',
-          backgroundAttachment: 'fixed',
-        }}
+        className="steel-section-bg relative z-10 pt-16 pb-24 -mb-24 shadow-2xl"
       >
         <ServicesShowcase />
         <AboutSection />

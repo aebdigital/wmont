@@ -119,7 +119,7 @@ export function SiteHeader() {
           >
             <span className="relative flex h-16 w-fit shrink-0 overflow-hidden rounded md:h-20">
               <video
-                src="/assets/uploads/2023/02/0001-0400.mp4"
+                src="/assets/uploads/2023/02/0001-0400-optimized.mp4"
                 className="h-full w-auto object-contain pointer-events-none"
                 autoPlay
                 muted

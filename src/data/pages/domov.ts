@@ -509,7 +509,7 @@ export const pageData = {
   videos: [
   {
     "type": "video",
-    "src": "/assets/uploads/2023/02/0001-0400.mp4",
+    "src": "/assets/uploads/2023/02/0001-0400-optimized.mp4",
     "alt": ""
   }
 ] as MediaItem[],
