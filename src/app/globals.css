@@ -55,6 +55,23 @@ body::before {
   background: transparent;
 }
 
+.steel-section-bg::before {
+  content: "";
+  display: block;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  margin-bottom: -100vh;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(244, 245, 245, 0.76), rgba(244, 245, 245, 0.76)),
+    url("/steelbg.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
