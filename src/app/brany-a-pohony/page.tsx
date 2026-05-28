@@ -7,7 +7,9 @@ import { pageData } from "@/data/pages/brany-a-pohony";
 import type { ContentBlock } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: pageData.seoTitle || pageData.title,
+  title: {
+    absolute: pageData.seoTitle || pageData.title
+  },
   description: pageData.excerpt,
   alternates: { canonical: pageData.path },
   openGraph: {

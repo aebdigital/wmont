@@ -62,7 +62,7 @@ export function HomeHero({ page }: { page: PageData }) {
   return (
     <>
       {/* Fixed container holding background image, overlay, and text */}
-      <div className="fixed top-0 left-0 h-[90vh] w-full overflow-hidden z-0 bg-ink">
+      <div className="fixed top-0 left-0 h-screen w-full overflow-hidden z-0 bg-ink">
         <motion.div style={{ y: imageY, scale: 1.15 }} className="absolute inset-0 h-full w-full">
           <Image
             src={heroImageSrc}
@@ -151,7 +151,7 @@ export function HomeHero({ page }: { page: PageData }) {
       </div>
 
       {/* Spacer to push downstream content below the fold */}
-      <div className="h-[90vh] w-full pointer-events-none" />
+      <div className="h-screen w-full pointer-events-none" />
     </>
   );
 }

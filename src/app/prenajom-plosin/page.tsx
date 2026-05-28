@@ -5,7 +5,9 @@ import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { liftProducts, pageData } from "@/data/pages/prenajom-plosin";
 
 export const metadata: Metadata = {
-  title: pageData.seoTitle || pageData.title,
+  title: {
+    absolute: pageData.seoTitle || pageData.title
+  },
   description: pageData.excerpt,
   alternates: { canonical: pageData.path },
   openGraph: {

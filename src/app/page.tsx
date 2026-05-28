@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactBand } from "@/components/ContactBand";
 import { HomeHero } from "@/components/Hero";
@@ -5,6 +6,16 @@ import { MarqueeGallery } from "@/components/MarqueeGallery";
 import { ServicesShowcase } from "@/components/ServicesShowcase";
 import { pageData } from "@/data/pages/domov";
 import { pageData as galeriaData } from "@/data/pages/galeria";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: pageData.seoTitle
+  },
+  description: pageData.excerpt,
+  alternates: {
+    canonical: "/"
+  }
+};
 
 export default function HomePage() {
   return (

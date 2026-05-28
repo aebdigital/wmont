@@ -4,7 +4,7 @@ export const pageData = {
   slug: "sklenene-zabradlie-logie-pergoly",
   path: "/sklenene-zabradlie-logie-pergoly",
   title: "Pergoly, terasy, logie a sklenené terasy",
-  seoTitle: "Pergoly, terasy, logie a sklenené terasy - wmont",
+  seoTitle: "Sklenené zábradlie, logie a pergoly - wmont",
   excerpt: "je zameraná na plnenie tých najodvážnejších snov a predstáv v oblasti výroby a montáže opracovaného skla. Ak ste vždy túžili mať krásny moderný dizajn podľa svojich predstáv na schodisku a balkónoch svojho domova mať sklenené zábradlie, neváhajte sa nám zdôveriť so svojou predstavou, ktorú Vám radi pomôžeme zrealizovať. Ale to nie je ani zďaleka všetko čím môžeme byť pre Váš domov prínosom. V našich možnostiach je okrem iného aj výroba sklenených kuchynských zástien v rôznych farebných prevedeniach a s vlastnými grafickými motívmi. Zaoberáme sa aj výrobou sklenených stien, sklenených dverí, výrobou pochôdzneho skla, sklenených schodísk a rôznych iných sklenených výrobkov. Sklenené zábradlie použité či už v interiéri alebo exteriéri vie dodať Vášmu domovu alebo obchodným priestorom eleganciu a zároveň pridanú hodnotu, ktorá sa skrýva v modernom vzhľade. Vďaka sklenenému zábradliu sa môžu vaše priestory opticky viac zväčšiť a miestnosti sa môžu viac presvetliť.",
   isService: true,
   blocks: [

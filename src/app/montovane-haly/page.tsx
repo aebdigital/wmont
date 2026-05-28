@@ -11,7 +11,9 @@ import {
 } from "@/data/pages/montovane-haly";
 
 export const metadata: Metadata = {
-  title: pageData.seoTitle || pageData.title,
+  title: {
+    absolute: pageData.seoTitle || pageData.title
+  },
   description: pageData.excerpt,
   alternates: { canonical: pageData.path },
   openGraph: {

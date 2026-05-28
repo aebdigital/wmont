@@ -49,7 +49,10 @@ export function StructuredData() {
       "@id": `${siteUrl}/#website`,
       name: brand.name,
       url: siteUrl,
-      inLanguage: "sk-SK"
+      inLanguage: "sk-SK",
+      publisher: {
+        "@id": `${siteUrl}/#localbusiness`
+      }
     },
     {
       "@context": "https://schema.org",
