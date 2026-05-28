@@ -29,28 +29,30 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  background-color: var(--background);
-  background-image:
-    linear-gradient(rgba(244, 245, 245, 0.76), rgba(244, 245, 245, 0.76)),
-    url("/steelbg.webp");
-  background-attachment: scroll;
-  background-position: top center;
-  background-repeat: repeat-y;
-  background-size: 100% auto;
+  isolation: isolate;
+  background-color: transparent;
   color: var(--foreground);
   font-family: Montserrat, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-.steel-section-bg {
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
   background-image:
     linear-gradient(rgba(244, 245, 245, 0.76), rgba(244, 245, 245, 0.76)),
     url("/steelbg.webp");
-  background-attachment: scroll;
   background-position: top center;
-  background-repeat: repeat-y;
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.steel-section-bg {
+  background: transparent;
 }
 
 a {
