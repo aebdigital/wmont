@@ -313,34 +313,42 @@ export function SiteHeader() {
           aria-label="Mobilná navigácia – zoznam"
         >
           <div className="grid gap-2">
-            {navigation.map((item) =>
-              item.label === "Služby" ? (
-                <div key={item.href} className="grid gap-2">
-                  <p className="px-1 pt-2 text-xs font-extrabold uppercase tracking-normal text-redline">
-                    Služby
-                  </p>
-                  {services.map((service) => (
-                    <Link
-                      key={service.slug}
-                      href={service.path}
-                      className="rounded border border-line px-4 py-4 text-sm font-bold"
-                      onClick={() => setOpen(false)}
-                    >
-                      {service.title}
-                    </Link>
-                  ))}
-                </div>
-              ) : (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded border border-line px-4 py-4 text-sm font-bold"
-                  onClick={() => setOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {(() => {
+              const order = ["Domov", "O nás", "Galéria", "Kontakt a cena", "Služby"];
+              const orderedNavigation = [...navigation].sort((a, b) => {
+                const indexA = order.indexOf(a.label);
+                const indexB = order.indexOf(b.label);
+                return (indexA !== -1 ? indexA : 99) - (indexB !== -1 ? indexB : 99);
+              });
+              return orderedNavigation.map((item) =>
+                item.label === "Služby" ? (
+                  <div key={item.href} className="grid gap-2">
+                    <p className="px-1 pt-2 text-xs font-extrabold uppercase tracking-normal text-redline">
+                      Služby
+                    </p>
+                    {services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        href={service.path}
+                        className="rounded border border-line px-4 py-4 text-sm font-bold"
+                        onClick={() => setOpen(false)}
+                      >
+                        {service.title}
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="rounded border border-line px-4 py-4 text-sm font-bold"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              );
+            })()}
             <a
               href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`}
               className="mt-1 inline-flex items-center justify-center gap-2 rounded bg-redline px-4 py-4 text-sm font-bold text-white"
