@@ -116,7 +116,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Kovovýroba priemyselných prvkov na mieru podľa požiadaviek zákazník. Čo všetko vieme vyrobiť? Vyrábame rôzne výrobky pre priemysel na mieru ako rebríky, protihlukové steny, palety, podložky, závesy do lakovacích liniek. Vieme na mieru vyrobiť billboardy a pútače, stavebné prípravky, lávky, únikové schodiská, zábrany a rampy a ďalšie priemyselné prvky na mieru podľa dohody."
+    "text": "Kovovýroba priemyselných prvkov na mieru podľa požiadaviek zákazníka. Čo všetko vieme vyrobiť? Vyrábame rôzne výrobky pre priemysel na mieru ako rebríky, protihlukové steny, palety, podložky, závesy do lakovacích liniek. Vieme na mieru vyrobiť billboardy a pútače, stavebné prípravky, lávky, únikové schodiská, zábrany a rampy a ďalšie priemyselné prvky na mieru podľa dohody."
   },
   {
     "type": "heading",
@@ -161,7 +161,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "OCEĽOVÉ KONŠTRUKCIE, KOMPONENTY A SKÚŠKY. V našej výrobnej prevádzke ponúka spoločnosť W-Mont s.r.o. okrem iných, aj montážne služby. Naši kvalifikovaní výrobný pracovníci s dlhoročnou praxou montujú stroje a ich súčasti v súlade s vami alebo nami vytvorenou výkresovou dokumentáciou. Dokončujeme váš výrobok napríklad montážou oceľových častí, elektroniky a hydraulických alebo pneumatických komponentov."
+    "text": "OCEĽOVÉ KONŠTRUKCIE, KOMPONENTY A SKÚŠKY. V našej výrobnej prevádzke ponúka spoločnosť W-Mont s.r.o. okrem iných, aj montážne služby. Naši kvalifikovaní výrobní pracovníci s dlhoročnou praxou montujú stroje a ich súčasti v súlade s vami alebo nami vytvorenou výkresovou dokumentáciou. Dokončujeme váš výrobok napríklad montážou oceľových častí, elektroniky a hydraulických alebo pneumatických komponentov."
   },
   {
     "type": "heading",
@@ -176,12 +176,12 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Individuálne ceny, môžete si zostaviť vlastnú sadu pohonu, podľa Vašej individuálnej predstavy. Stačí nas len kontaktovať emailom alebo telefonicky a oznámiť nám Vami vybrané diely."
+    "text": "Ponúkame individuálne ceny a možnosť zostaviť si vlastnú sadu pohonu podľa vašich predstáv. Stačí nás kontaktovať e-mailom alebo telefonicky a oznámiť nám vybrané diely."
   },
   {
     "type": "text",
     "level": null,
-    "text": "Ak si nie ste istí výberom môžete nás kontaktovať na tel. č.+421 918 150 409"
+    "text": "Ak si nie ste istí výberom, môžete nás kontaktovať na tel. č. +421 918 150 409."
   },
   {
     "type": "text",
@@ -306,7 +306,7 @@ export const pageData = {
   {
     "type": "list",
     "level": null,
-    "text": "tvorí základ zimnej záhrady či prestrešenia terasy a je teda čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov."
+    "text": "tvorí základ zimnej záhrady či prestrešenia terasy a čoraz častejšie je súčasťou moderných plánov bývania."
   },
   {
     "type": "heading",
@@ -316,17 +316,17 @@ export const pageData = {
   {
     "type": "list",
     "level": null,
-    "text": "sú v dnešnej modernej dobe často čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov. Zimné záhrady dokážu totiž skĺbiť rôzne možnosti využitia"
+    "text": "sú čoraz častejšie súčasťou moderného bývania. Zimné záhrady dokážu skĺbiť rôzne možnosti využitia"
   },
   {
     "type": "heading",
     "level": 3,
-    "text": "Systém zasklenia bolkónov, logií a terás"
+    "text": "Systém zasklenia balkónov, logií a terás"
   },
   {
     "type": "list",
     "level": null,
-    "text": "chráni nie len pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie."
+    "text": "chráni nielen pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie."
   },
   {
     "type": "heading",
@@ -351,7 +351,7 @@ export const pageData = {
   {
     "type": "heading",
     "level": 3,
-    "text": "GSM A WIFI obládanie"
+    "text": "GSM A WIFI ovládanie"
   },
   {
     "type": "list",

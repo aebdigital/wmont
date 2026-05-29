@@ -16,7 +16,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Vaše špecifické požiadavky nie sú prekážkou. Po vzájomnej konzultácií vieme vám ponúknuť oveľa širšiu škálu dizajnov, prípadne vyrobiť plechy podľa vašich predstáv a dizajnov. Dizajnové plechy sa stávajú neodmysliťeľnou súčasťou modernej architektúry."
+    "text": "Vaše špecifické požiadavky nie sú prekážkou. Po vzájomnej konzultácii vám vieme ponúknuť širšiu škálu dizajnov, prípadne vyrobiť plechy podľa vašich predstáv a návrhov. Dizajnové plechy sa stávajú neodmysliteľnou súčasťou modernej architektúry."
   },
   {
     "type": "heading",

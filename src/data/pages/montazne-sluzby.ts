@@ -6,7 +6,7 @@ export const pageData = {
   title: "Montážne služby",
   subtitle: "Oceľové konštrukcie, komponenty, brany a oplotenia.",
   seoTitle: "Montážne služby - wmont",
-  excerpt: "V našej výrobnej prevádzke ponúka spoločnosť W-Mont, okrem iných, aj montážne služby. Naši kvalifikovaní výrobný pracovníci s dlhoročnou praxou montujú stroje a ich súčasti v súlade s vami alebo nami vytvorenou výkresovou dokumentáciou. Dokončujeme váš výrobok napríklad montážou oceľových častí, elektroniky a hydraulických alebo pneumatických komponentov. Vyrábame, dodávame a montujeme celozvárané alebo skrutkované oceľové konštrukcie. Pre montáž používame hospodárne profily s dôrazom na minimalizáciu nákladov na spodnú stavbu. Pri montáži kladieme dôraz na jednoduchosť a funkčnosť. Celý proces podporujeme technickou dokumentáciou, statickým posudkom, realizačnou resp. výrobnou dokumentáciou. Dokážeme zabezpečiť oceľové konštrukcie pre priemysel a stavebníctvo ale aj individuálne oceľové konštrukcie na mieru.",
+  excerpt: "V našej výrobnej prevádzke ponúka spoločnosť W-Mont, okrem iných, aj montážne služby. Naši kvalifikovaní výrobní pracovníci s dlhoročnou praxou montujú stroje a ich súčasti v súlade s vami alebo nami vytvorenou výkresovou dokumentáciou. Dokončujeme váš výrobok napríklad montážou oceľových častí, elektroniky a hydraulických alebo pneumatických komponentov. Vyrábame, dodávame a montujeme celozvárané alebo skrutkované oceľové konštrukcie. Pre montáž používame hospodárne profily s dôrazom na minimalizáciu nákladov na spodnú stavbu. Pri montáži kladieme dôraz na jednoduchosť a funkčnosť. Celý proces podporujeme technickou dokumentáciou, statickým posudkom, realizačnou resp. výrobnou dokumentáciou. Dokážeme zabezpečiť oceľové konštrukcie pre priemysel a stavebníctvo ale aj individuálne oceľové konštrukcie na mieru.",
   isService: true,
   blocks: [
   {
@@ -33,7 +33,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Naša firma vyrobí a namontuje interiérové i exteriérové točité schodisko. Zábradlia navrhujeme a vyrábame v širokej škále materiálových a tvarových vyhotovení. Návrh vždy vytvárame na mieru zákazníkovi, tak aby čo najlepšie splnilo požadovaný účel. Zábradlia, ktoré navrhujeme a vyrábame majú široké využite nielen v exteriéri, ale aj interiéri. Môžete si vybrať z:"
+    "text": "Naša firma vyrobí a namontuje interiérové aj exteriérové točité schodisko. Zábradlia navrhujeme a vyrábame v širokej škále materiálových a tvarových vyhotovení. Návrh vždy vytvárame na mieru zákazníkovi tak, aby čo najlepšie splnil požadovaný účel. Zábradlia majú široké využitie nielen v exteriéri, ale aj v interiéri. Môžete si vybrať z:"
   },
   {
     "type": "list",
@@ -53,7 +53,7 @@ export const pageData = {
   {
     "type": "list",
     "level": null,
-    "text": "oplotenia rodinných dom, pozemkov, areálov ploty ponúkame podľa požiadavky zákazníka."
+    "text": "oplotenia rodinných domov, pozemkov a areálov podľa požiadaviek zákazníka."
   },
   {
     "type": "image_right",
@@ -130,7 +130,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Priemyselné haly poskytujú širokospektrálne využitie v oblasti priemyslu, výroby, ako skladové priestory a pod. Pri ich projekcií a realizácii náš tím inžinierov zohľadňuje efektívnosť využitia priestoru a to nielen plošne ale aj výškovo. Oceľové haly slúžia svojím využitím v rozvoji iných podnikov ktorých podnikateľská činnosť si vyžaduje priestory pre svoju realizáciu. Rovnako ako aj ostatné haly z našej výroby aj priemyselné haly podliehajú prísnym normám a predpisom."
+    "text": "Priemyselné haly majú široké využitie v priemysle, výrobe aj skladovaní. Pri ich projekcii a realizácii náš tím zohľadňuje efektívne využitie priestoru, a to nielen plošne, ale aj výškovo. Oceľové haly pomáhajú rozvoju podnikov, ktorých činnosť si vyžaduje spoľahlivé prevádzkové priestory. Rovnako ako ostatné haly z našej výroby podliehajú prísnym normám a predpisom."
   },
   {
     "type": "image_right",

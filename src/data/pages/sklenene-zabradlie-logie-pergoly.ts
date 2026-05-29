@@ -26,7 +26,7 @@ export const pageData = {
     {
       "type": "text",
       "level": null,
-      "text": "tvorí základ zimnej záhrady či prestrešenia terasy a je teda čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov. Pergola dokáže totiž skĺbiť rôzne možnosti využitia toho istého priestoru aj v prechodných ročných obdobiach alebo pri nepriazni počasia a tak Vám poskytnú komfort, aký si zaslúžite, v lete ale aj v prechodných obdobiach roka. Vďaka kompletnej výrobe na mieru presne pre Vás, sú nami dodávané systémy flexibilné, a dokážeme Vám splniť Vaše želania."
+      "text": "Pergola tvorí základ zimnej záhrady či prestrešenia terasy a čoraz častejšie je súčasťou moderných plánov bývania. Dokáže prepojiť rôzne možnosti využitia toho istého priestoru aj v prechodných obdobiach alebo pri nepriazni počasia. Vďaka kompletnej výrobe na mieru sú naše systémy flexibilné a prispôsobené vašim požiadavkám."
     },
     {
       "type": "text",
@@ -66,17 +66,17 @@ export const pageData = {
     {
       "type": "text",
       "level": null,
-      "text": "sú v dnešnej modernej dobe často čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov. Zimné záhrady dokážu totiž skĺbiť rôzne možnosti využitia toho istého priestoru v každom ročnom období a tak Vám poskytnú komfort, aký si zaslúžite, v lete ale aj v prechodných obdobiach roka. Vďaka možnosti kombinácie pevných aj posuvných sklenených častí presklenia zimnej záhrady, a kompletnej výrobe na mieru presne pre Vás, sú nami dodávané systémy flexibilné, a dokážeme Vám splniť Vaše želania. Naše zimné záhrady montujeme v najrôznejších kútoch Slovenska, kde máme množstvo spokojných zákazníkov."
+      "text": "Zimné záhrady sú čoraz častejšie súčasťou moderného bývania. Dokážu skĺbiť rôzne možnosti využitia toho istého priestoru počas celého roka a priniesť komfort v lete aj v prechodných obdobiach. Vďaka kombinácii pevných a posuvných sklenených častí a výrobe na mieru sú naše systémy flexibilné a prispôsobené vašim požiadavkám. Zimné záhrady montujeme po celom Slovensku, kde máme množstvo spokojných zákazníkov."
     },
     {
       "type": "heading",
       "level": 1,
-      "text": "Systém zasklenia bolkónov a logií"
+      "text": "Systém zasklenia balkónov a logií"
     },
     {
       "type": "text",
       "level": null,
-      "text": "chráni nie len pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie. Zaisťuje minimalizáciu tepelných strát a ochranu pred hlukom."
+      "text": "chráni nielen pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie. Zaisťuje minimalizáciu tepelných strát a ochranu pred hlukom."
     },
     {
       "type": "text",

@@ -48,7 +48,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Po povrchovej úprave kovov získavajú kovové povrchy korozivzdornosť čiže odolnosť voči rýchlemu hrdzaveniu vplyvom vonkajšieho prostredia. Najmä ak sú kovové povrchy pravidelne vystavované vlhkosti a slnečnému žiareniu, korózia sa na nich objaví veľmi rýchlo. Poškodí sa tak nie len povrch, ale aj vnútorné vlastnosti kovov. Kvalitná povrchová úprava kovov by tak mala byť vždy vykonaná ešte pred začatím ich používania."
+    "text": "Po povrchovej úprave kovov získavajú kovové povrchy korozivzdornosť čiže odolnosť voči rýchlemu hrdzaveniu vplyvom vonkajšieho prostredia. Najmä ak sú kovové povrchy pravidelne vystavované vlhkosti a slnečnému žiareniu, korózia sa na nich objaví veľmi rýchlo. Poškodí sa tak nielen povrch, ale aj vnútorné vlastnosti kovov. Kvalitná povrchová úprava kovov by tak mala byť vždy vykonaná ešte pred začatím ich používania."
   },
   {
     "type": "text",

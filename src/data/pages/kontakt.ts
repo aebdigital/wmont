@@ -25,8 +25,33 @@ export const pageData = {
   },
   {
     "type": "heading",
-    "level": 2,
-    "text": "Vypracovanie cenovej ponuky: -Zašlite náhľad (fotografiu) vašej požadovanej brány alebo oplotenia.-Rozmery v mm výšku a šírku brány, bráničky a plotové dielce-Uveďte či chcete pohony na požadovanú bránu-Uveďte typ brány: samonosná posuvná, dvojkrídlová, braná v ktorej sa bude nachádzať bránička a pod. V prípade iných požiadaviek nás kontaktujte alebo pošlite telefonicky kontakt. Naša práca spočíva vo výrobe rôznych projektov podľa požiadaviek zákazníka vždy sa vám budeme snažiť vyhovieť.Mame rôzne portfólio produktov z kovu hliníka a pod."
+    "level": 3,
+    "text": "Čo nám poslať pre vypracovanie cenovej ponuky"
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "Fotografiu alebo náhľad požadovanej brány, oplotenia alebo výrobku."
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "Rozmery v milimetroch: výšku, šírku, bráničky a plotové dielce."
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "Informáciu, či chcete k bráne aj pohon alebo automatizáciu."
+  },
+  {
+    "type": "list",
+    "level": null,
+    "text": "Typ brány: samonosná posuvná, dvojkrídlová, s bráničkou alebo iné riešenie."
+  },
+  {
+    "type": "text",
+    "level": null,
+    "text": "V prípade špecifických požiadaviek nám pošlite kontakt. Vyrábame projekty na mieru a cenovú ponuku pripravíme podľa konkrétneho zadania."
   },
   {
     "type": "heading",

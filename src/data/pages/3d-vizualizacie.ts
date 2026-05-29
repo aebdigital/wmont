@@ -36,7 +36,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Realistický trávnik, detailné dreviny a stromy, záhradný nábytok, auto a podobne. To sú detaily, vďaka ktorým môže stavba vyniknúť vo svojom prirodzenom prostredí. Ak je model stavby umiestnený do kontextu reálnej parcely, vizualizácia domu získava výrazne lepšiu výpovednú hodnotu. V závislosti od rozmerov a členitosti stavby sa vyhotovuje niekoľko realistických pohľadov (renderov), tak aby bola zachytená celá idea domu."
+    "text": "Realistický trávnik, detailné dreviny a stromy, záhradný nábytok, auto a podobne. To sú detaily, vďaka ktorým môže stavba vyniknúť vo svojom prirodzenom prostredí. Ak je model stavby umiestnený do kontextu reálnej parcely, vizualizácia domu získava výrazne lepšiu výpovednú hodnotu. V závislosti od rozmerov a členitosti stavby sa vyhotovuje niekoľko realistických pohľadov (renderov), aby bola zachytená celá idea domu."
   },
   {
     "type": "heading",

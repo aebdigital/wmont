@@ -23,7 +23,7 @@ export function MarqueeGallery({ images, title }: { images: MediaItem[]; title: 
           </h2>
         </div>
         <Link
-          href="/referencie"
+          href="/galeria"
           className="inline-flex h-12 items-center justify-center gap-2 rounded border border-line px-5 text-sm font-extrabold text-ink transition hover:bg-neutral-50"
         >
           Všetky referencie

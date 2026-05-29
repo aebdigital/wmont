@@ -218,7 +218,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Kovovýroba priemyselných prvkov na mieru podľa požiadaviek zákazník. Čo všetko vieme vyrobiť? Vyrábame rôzne výrobky pre priemysel na mieru ako rebríky, protihlukové steny, palety, podložky, závesy do lakovacích liniek. Vieme na mieru vyrobiť billboardy a pútače, stavebné prípravky, lávky, únikové schodiská, zábrany a rampy a ďalšie priemyselné prvky na mieru podľa dohody."
+    "text": "Kovovýroba priemyselných prvkov na mieru podľa požiadaviek zákazníka. Čo všetko vieme vyrobiť? Vyrábame rôzne výrobky pre priemysel na mieru ako rebríky, protihlukové steny, palety, podložky, závesy do lakovacích liniek. Vieme na mieru vyrobiť billboardy a pútače, stavebné prípravky, lávky, únikové schodiská, zábrany a rampy a ďalšie priemyselné prvky na mieru podľa dohody."
   },
   {
     "type": "list",
@@ -263,12 +263,12 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Na základe požiadaviek zákazníkov dokážeme navrhovať individuálne riešenia po presnej špecifikácii požadovaného diela. Pre našich zákazníkov dokážeme v rámci požiadaviek vypracovať nie len 3D vizualizácie diela, ale aj prepočty statiky či dodanie výrobných výkresov."
+    "text": "Na základe požiadaviek zákazníkov dokážeme navrhovať individuálne riešenia po presnej špecifikácii požadovaného diela. Pre našich zákazníkov dokážeme v rámci požiadaviek vypracovať nielen 3D vizualizácie diela, ale aj prepočty statiky či dodanie výrobných výkresov."
   },
   {
     "type": "text",
     "level": null,
-    "text": "Zároveň vystavujeme plnohodnotné cenové ponuky pre schválenie dopytu zákazníkom, následne po dokončení a dohodnutí účtovného procesu ide výrobok do výroby. V rámci práce s oceľovými kovovými konštrukciami prispôsobujeme výrobu individuálne podľa cieleného umiestnenia a využitia výrobku."
+    "text": "Zároveň pripravujeme cenové ponuky na schválenie zákazníkom. Po odsúhlasení zadania a podmienok ide výrobok do výroby. Pri oceľových a kovových konštrukciách prispôsobujeme výrobu individuálne podľa umiestnenia a plánovaného využitia výrobku."
   },
   {
     "type": "text",
@@ -288,7 +288,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "Výplň mreží si zákazník môže navrhovať aj podľa predstavy. Výplň vie tvoriť materiál Jokel, gulatina, plocháč rôznych požadovaných priemerov a veľkostí. Bezpečnostná mreža pre napríklad uzamykanie priechodov môže byť vyplnená aj materiálom ťahokov podľa výberu zákazníka."
+    "text": "Výplň mreží si zákazník môže navrhnúť podľa vlastnej predstavy. Výplň môže tvoriť jokel, guľatina alebo plocháč v rôznych požadovaných priemeroch a veľkostiach. Bezpečnostná mreža na uzamykanie priechodov môže byť vyplnená aj ťahokovom podľa výberu zákazníka."
   }
 ] as ContentBlock[],
   images: [

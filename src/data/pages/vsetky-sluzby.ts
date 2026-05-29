@@ -126,7 +126,7 @@ export const pageData = {
   {
     "type": "heading",
     "level": 3,
-    "text": "GSM A WIFI obládanie"
+    "text": "GSM A WIFI ovládanie"
   },
   {
     "type": "text",
@@ -221,7 +221,7 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "tvorí základ zimnej záhrady či prestrešenia terasy a je teda čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov."
+    "text": "tvorí základ zimnej záhrady či prestrešenia terasy a čoraz častejšie je súčasťou moderných plánov bývania."
   },
   {
     "type": "heading",
@@ -231,17 +231,17 @@ export const pageData = {
   {
     "type": "text",
     "level": null,
-    "text": "sú v dnešnej modernej dobe často čoraz častejšie neoddeliteľnou súčasťou kreatívnych plánov o Vašom domove snov. Zimné záhrady dokážu totiž skĺbiť rôzne možnosti využitia"
+    "text": "sú čoraz častejšie súčasťou moderného bývania. Zimné záhrady dokážu skĺbiť rôzne možnosti využitia"
   },
   {
     "type": "heading",
     "level": 3,
-    "text": "Systém zasklenia bolkónov, logií a terás"
+    "text": "Systém zasklenia balkónov, logií a terás"
   },
   {
     "type": "text",
     "level": null,
-    "text": "chráni nie len pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie."
+    "text": "chráni nielen pred nepriaznivým počasím, no taktiež zväčšuje obytný priestor a umožňuje jeho celoročné využívanie."
   }
 ] as ContentBlock[],
   images: [

@@ -33,7 +33,7 @@ const sectionImages: Record<string, ImageDef | ImageDef[]> = {
       caption: "Prístrešky s rozmerom 9x7m vďaka premosteniu"
     }
   ],
-  "Systém zasklenia bolkónov a logií": {
+  "Systém zasklenia balkónov a logií": {
     src: "/sklenene/systemzaskleniabalkonovalogii.jpg",
     alt: "Systém zasklenia balkónov a logií"
   }
@@ -43,7 +43,7 @@ const imageAfterBlockIndex: Record<number, string> = {
   4: "Pergola",
   9: "Posuvné zasklenie terás",
   11: "Zimné záhrady",
-  15: "Systém zasklenia bolkónov a logií",
+  15: "Systém zasklenia balkónov a logií",
   22: "Sklenené zábradlie"
 };
 
